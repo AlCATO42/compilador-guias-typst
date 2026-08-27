@@ -259,7 +259,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSc_gHMLW__rnxTGxAk6Ib8I13iWoMZlvpuXGJwegZnsLDdBVw/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdqj3zX9bCu-4elEq1vCPVg7jSIDt7fbyNj43cVTEV1V4zgkw/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
