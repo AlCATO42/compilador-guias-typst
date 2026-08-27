@@ -6,22 +6,59 @@
   paper: "us-letter",
   margin: (x: 8.5mm, top: 24mm, bottom: 8.5mm),
   header: context [
-
-    #grid(
-      columns: (1fr),
-      align: (center + horizon, center + horizon, center + horizon),
-      
-      [
-        #text(size: 9.0pt, weight: "bold", fill: primary-dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
+    #let tiene_izq = false
+    #let tiene_der = false
+    #if tiene_izq and tiene_der [
+      #grid(
+        columns: (50pt, 1fr, 50pt),
+        align: (center + horizon, center + horizon, center + horizon),
+        image("logo_izq.png", height: 50pt, fit: "contain"),
+        align(center)[
+          #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
+          #v(-4.5pt)
+          #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+          #v(-5.0pt)
+          #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        ],
+        image("logo_der.png", height: 50pt, fit: "contain")
+      )
+    ] else if tiene_izq [
+      #grid(
+        columns: (50pt, 1fr),
+        align: (center + horizon, center + horizon),
+        image("logo_izq.png", height: 50pt, fit: "contain"),
+        align(center)[
+          #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
+          #v(-4.5pt)
+          #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+          #v(-5.0pt)
+          #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        ]
+      )
+    ] else if tiene_der [
+      #grid(
+        columns: (1fr, 50pt),
+        align: (center + horizon, center + horizon),
+        align(center)[
+          #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
+          #v(-4.5pt)
+          #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+          #v(-5.0pt)
+          #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        ],
+        image("logo_der.png", height: 50pt, fit: "contain")
+      )
+    ] else [
+      #align(center)[
+        #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
         #v(-4.5pt)
         #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
         #v(-5.0pt)
         #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
       ]
-    )
+    ]
     #v(-2.5pt)
-    #line(length: 100%, stroke: 0.9pt + primary-color)
-  
+    #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
   ],
   footer: context [
     #line(length: 100%, stroke: 0.35pt + rgb("#dcdcdc"))
@@ -34,8 +71,8 @@
   ]
 )
 
-#set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.50em)
+#set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 10pt, fill: rgb("#2c3e50"), lang: "es")
+#set par(justify: true, leading: 0.40em)
 
 #let primary-color = rgb("#1a73e8")
 #let primary-dark = rgb("#0d47a1")
@@ -56,33 +93,48 @@
   [#text(weight: "bold", fill: primary-color, size: 12pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
 
-// Macro inteligente de Cajas Multimedia con Colores Temáticos Dominantes
 #let caja-multimedia(tipo, btnTexto, url, archivo-qr) = {
-  let (bg-col, border-col, btn-col, text-col, icon-label) = if tipo == "youtube" {
-    (rgb("#fee2e2"), rgb("#dc2626"), rgb("#b91c1c"), rgb("#991b1b"), "▶ Video Interactivo (YouTube):")
+  let bg_col = rgb("#e2e8f0")
+  let border_col = rgb("#64748b")
+  let btn_col = rgb("#0f172a")
+  let text_col = rgb("#1e293b")
+  let icon_label = "🔗 Recurso Interactivo:"
+
+  if tipo == "youtube" {
+    bg_col = rgb("#fee2e2")
+    border_col = rgb("#dc2626")
+    btn_col = rgb("#b91c1c")
+    text_col = rgb("#991b1b")
+    icon_label = "▶ Video Interactivo (YouTube):"
   } else if tipo == "spotify" {
-    (rgb("#dcfce7"), rgb("#16a34a"), rgb("#15803d"), rgb("#166534"), "🎧 Podcast / Audio (Spotify):")
+    bg_col = rgb("#dcfce7")
+    border_col = rgb("#16a34a")
+    btn_col = rgb("#15803d")
+    text_col = rgb("#166534")
+    icon_label = "🎧 Podcast / Audio (Spotify):"
   } else if tipo == "drive" {
-    (rgb("#dbeafe"), rgb("#2563eb"), rgb("#1d4ed8"), rgb("#1e40af"), "📁 Archivo / Documento (Drive):")
-  } else {
-    (rgb("#e2e8f0"), rgb("#64748b"), rgb("#0f172a"), rgb("#1e293b"), "🔗 Recurso Interactivo:")
+    bg_col = rgb("#dbeafe")
+    border_col = rgb("#2563eb")
+    btn_col = rgb("#1d4ed8")
+    text_col = rgb("#1e40af")
+    icon_label = "📁 Archivo / Documento (Drive):"
   }
 
   block(
-    fill: bg-col, stroke: 0.85pt + border-col, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
+    fill: bg_col, stroke: 0.85pt + border_col, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
     grid(
       columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
       [
-        #text(size: 6.9pt, weight: "bold", fill: text-col)[#icon-label] \
+        #text(size: 6.9pt, weight: "bold", fill: text_col)[#icon_label] \
         #v(2.0pt)
         #link(url)[
-          #box(fill: btn-col, radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+          #box(fill: btn_col, radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
             #text(fill: white, weight: "bold", size: 6.5pt)[#btnTexto]
           ]
         ]
       ],
       [
-        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + border-col)[
+        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + border_col)[
           #image(archivo-qr, width: 60pt, fit: "contain")
         ]
       ]
@@ -194,15 +246,15 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfgnkBcWYX-sD-lnQrli8eqznoDRLCyJDAS6AHY3ROqpmG6jA/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLScEY3d013CvXtoJT0_esL9ncJ2ln_cznj85XUpAIjaLGSxXgQ/viewform", "qr_evaluacion.png", [
     
-    #v(2.5pt) * ¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios? *
+    #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
     #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles. \ 
     #h(6pt) c) La alianza pacífica con la Unión Soviética. \ 
     #h(6pt) d) La eliminación voluntaria del ejército alemán. \ 
 
-    #v(2.5pt) * ¿Qué caracterizó la propaganda en los regímenes totalitarios? *
+    #v(2.5pt) *¿Qué caracterizó la propaganda en los regímenes totalitarios?* \ 
     #h(6pt) a) El debate abierto en medios de comunicación independientes. \ 
     #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder. \ 
     #h(6pt) c) La libre circulación de prensa extranjera. \ 
