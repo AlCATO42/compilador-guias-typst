@@ -24,15 +24,15 @@ jobs:
           for file in *.typ; do
             if [ -f "$file" ]; then
               filename="${file%.*}"
-              echo "Compilando $file a ${filename}.pdf..."
+              echo "Compilando $file..."
               typst compile "$file" "${filename}.pdf"
             fi
           done
 
-      - name: Guardar y sincronizar PDF
+      - name: Guardar PDF en el repositorio
         run: |
-          git config --global user.name "Typst Cloud Bot"
-          git config --global user.email "bot@typst-cloud.local"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add *.pdf
-          git commit -m "Auto-compilación PDF [skip ci]" || echo "Sin cambios pendientes"
+          git commit -m "Auto-compilacion PDF" || echo "Sin cambios"
           git push
