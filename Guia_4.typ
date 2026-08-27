@@ -248,12 +248,18 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     *Misión de escucha:* Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
 
+    #v(3pt)
+    #align(center)[
+      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_2.jpg", width: 100%, fit: "contain")
+      ]
+    ]
   ]
   #v(2.5pt)
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSf8AfFYYW1Hh1Xnkqa7ATJcLonQn2FjESPlQwsKxZb9LrM0-w/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfqEV5wcS_VdZj_FTU0B7RzcdnTCpmxzAkGqd9Bsh_EC1zQrQ/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
