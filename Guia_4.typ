@@ -4,60 +4,67 @@
 
 #set page(
   paper: "us-letter",
-  margin: (x: 8.5mm, top: 24mm, bottom: 8.5mm),
+  margin: (x: 8.5mm, top: 26mm, bottom: 8.5mm),
   header: context [
+    #v(3.5pt)
     #let tiene_izq = true
     #let tiene_der = true
+    #let box_logo(img_name) = box(
+      width: 30pt, 
+      height: 30pt, 
+      align(center + horizon)[#image(img_name, fit: "contain")]
+    )
+
     #if tiene_izq and tiene_der [
       #grid(
-        columns: (40pt, 1fr, 40pt),
+        columns: (30pt, 1fr, 30pt),
         align: (center + horizon, center + horizon, center + horizon),
-        image("logo_izq.png", height: 40pt, fit: "contain"),
-        align(center)[
+        box_logo("logo_izq.png"),
+        align(center + horizon)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-          #v(-4.5pt)
+          #v(-4.0pt)
           #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-          #v(-5.0pt)
+          #v(-4.5pt)
           #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ],
-        image("logo_der.png", height: 40pt, fit: "contain")
+        box_logo("logo_der.png")
       )
     ] else if tiene_izq [
       #grid(
-        columns: (40pt, 1fr),
+        columns: (30pt, 1fr),
         align: (center + horizon, center + horizon),
-        image("logo_izq.png", height: 40pt, fit: "contain"),
-        align(center)[
+        box_logo("logo_izq.png"),
+        align(center + horizon)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-          #v(-4.5pt)
+          #v(-4.0pt)
           #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-          #v(-5.0pt)
+          #v(-4.5pt)
           #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ]
       )
     ] else if tiene_der [
       #grid(
-        columns: (1fr, 40pt),
+        columns: (1fr, 30pt),
         align: (center + horizon, center + horizon),
-        align(center)[
+        align(center + horizon)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-          #v(-4.5pt)
+          #v(-4.0pt)
           #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-          #v(-5.0pt)
+          #v(-4.5pt)
           #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ],
-        image("logo_der.png", height: 40pt, fit: "contain")
+        box_logo("logo_der.png")
       )
     ] else [
-      #align(center)[
+      #align(center + horizon)[
         #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-        #v(-4.5pt)
+        #v(-4.0pt)
         #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-        #v(-5.0pt)
+        #v(-4.5pt)
         #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
       ]
     ]
-    #v(-2.5pt)
+    #v(-1.5pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
   ],
   footer: context [
@@ -246,7 +253,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdVNAwM9hGzSezu1HB_G2ZicyCIWxZSD69pKCXSrKh7i0OYDA/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSf8AfFYYW1Hh1Xnkqa7ATJcLonQn2FjESPlQwsKxZb9LrM0-w/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
