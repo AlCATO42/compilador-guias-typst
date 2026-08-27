@@ -4,17 +4,24 @@
 
 #set page(
   paper: "us-letter",
-  margin: (x: 8.5mm, top: 23mm, bottom: 8.5mm),
+  margin: (x: 8.5mm, top: 24mm, bottom: 8.5mm),
   header: context [
-    #align(center)[
-      #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-      #v(-4.5pt)
-      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-      #v(-5.0pt)
-      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-    ]
+
+    #grid(
+      columns: (1fr),
+      align: (center + horizon, center + horizon, center + horizon),
+      
+      [
+        #text(size: 9.0pt, weight: "bold", fill: primary-dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
+        #v(-4.5pt)
+        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+        #v(-5.0pt)
+        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+      ]
+    )
     #v(-2.5pt)
-    #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
+    #line(length: 100%, stroke: 0.9pt + primary-color)
+  
   ],
   footer: context [
     #line(length: 100%, stroke: 0.35pt + rgb("#dcdcdc"))
@@ -28,55 +35,58 @@
 )
 
 #set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.35em)
+#set par(justify: true, leading: 0.6em)
 
 #let primary-color = rgb("#1a73e8")
 #let primary-dark = rgb("#0d47a1")
-#let accent-color = rgb("#f9ab00")
+#let accent-color = rgb("#d97706")
+#let bg-multimedia = rgb("#e2e8f0")
+#let stroke-multimedia = rgb("#64748b")
 
 #let box-objetivo(cuerpo) = block(
   fill: rgb("#e8f0fe"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + primary-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-dark, size: 11.0pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-dark, size: 12pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
 )
 
 #let box-sabias(cuerpo) = block(
   fill: rgb("#fef7e0"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + accent-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: rgb("#b06000"), size: 11.0pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: rgb("#92400e"), size: 12pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
 )
 
 #let actividad-card(titulo, cuerpo, bg: rgb("#ffffff")) = block(
   fill: bg, inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: 0.45pt + rgb("#d0d7de"), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-color, size: 11.0pt)[#titulo] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-color, size: 12pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
 
+// Caja Multimedia con fondo oscuro de alto contraste
 #let caja-multimedia(tipo, btnTexto, url, archivo-qr) = block(
-  fill: rgb("#f8fafc"), stroke: 0.5pt + rgb("#cbd5e1"), radius: 3.0pt, inset: 4.0pt, width: 100%, breakable: false,
+  fill: bg-multimedia, stroke: 0.75pt + stroke-multimedia, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
   grid(
     columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
     [
-      #text(size: 6.8pt, weight: "bold", fill: rgb("#334155"))[🔗 Recurso Interactivo:] \
-      #v(2.0pt)
+      #text(size: 7.0pt, weight: "bold", fill: rgb("#0f172a"))[🔗 Recurso Interactivo:] \
+      #v(2.5pt)
       #link(url)[
-        #box(fill: if tipo == "youtube" { rgb("#cc0000") } else { primary-color }, radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
+        #box(fill: if tipo == "youtube" { rgb("#cc0000") } else { primary-color }, radius: 2.0pt, inset: (x: 6.5pt, y: 3.2pt))[
           #text(fill: white, weight: "bold", size: 6.5pt)[#btnTexto]
         ]
       ]
     ],
     [
-      #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.35pt + rgb("#cbd5e1"))[
-        #image(archivo-qr, width: 34pt, fit: "contain")
+      #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + stroke-multimedia)[
+        #image(archivo-qr, width: 60pt, fit: "contain")
       ]
     ]
   )
 )
 
 #let box-evaluacion(titulo, url, qr, cuerpo) = block(
-  fill: rgb("#f5f3ff"), stroke: 0.7pt + rgb("#c4b5fd"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: true,
+  fill: rgb("#f5f3ff"), stroke: 0.75pt + rgb("#8b5cf6"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: true,
   [
     #grid(
       columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
       [
-        #text(weight: "bold", fill: rgb("#6d28d9"), size: 11.0pt)[📝 #titulo] \
+        #text(weight: "bold", fill: rgb("#6d28d9"), size: 12pt)[📝 #titulo] \
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:] \
         #v(2.5pt)
@@ -87,19 +97,19 @@
         ]
       ],
       [
-        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.35pt + rgb("#c4b5fd"))[
-          #image(qr, width: 36pt, fit: "contain")
+        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
+          #image(qr, width: 60pt, fit: "contain")
         ]
       ]
     )
     #v(3.0pt)
-    #line(length: 100%, stroke: 0.35pt + rgb("#c4b5fd"))
+    #line(length: 100%, stroke: 0.4pt + rgb("#c4b5fd"))
     #v(1.0pt)
     #cuerpo
   ]
 )
 
-#align(center)[#text(size: 13.0pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
+#align(center)[#text(size: 14pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
 #v(0.3pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 1.5pt))[
@@ -138,7 +148,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #image("img_act_1.jpg", width: 100%, fit: "contain")
       ]
     ]
-    #v(3pt)
+    #v(3.5pt)
     #caja-multimedia("web", "ABRIR RECURSO ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
   ]
   #v(2.5pt)
@@ -149,7 +159,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
 
-    #v(3pt)
+    #v(3.5pt)
     #caja-multimedia("youtube", "VER VIDEO EN YOUTUBE ↗", "https://www.youtube.com/watch?v=2f3rCpvBq30", "qr_act_2.png")
   ]
   #v(2.5pt)
@@ -160,7 +170,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
 
-    #v(3pt)
+    #v(3.5pt)
     #caja-multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
   ]
   #v(2.5pt)
@@ -174,15 +184,15 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdjm08AhdhrMHdSsW0Gi8_u5n6_8ajgDM1K1G0CC0WjtCeh6Q/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSejSVFGqRFJMXVddGmAkBBQqgFAIOXIt7UuzCQpuAGHvIpobg/viewform", "qr_evaluacion.png", [
     
-    #v(2.0pt) * ¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios? *
+    #v(2.5pt) * ¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios? *
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
     #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles. \ 
     #h(6pt) c) La alianza pacífica con la Unión Soviética. \ 
     #h(6pt) d) La eliminación voluntaria del ejército alemán. \ 
 
-    #v(2.0pt) * ¿Qué caracterizó la propaganda en los regímenes totalitarios? *
+    #v(2.5pt) * ¿Qué caracterizó la propaganda en los regímenes totalitarios? *
     #h(6pt) a) El debate abierto en medios de comunicación independientes. \ 
     #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder. \ 
     #h(6pt) c) La libre circulación de prensa extranjera. \ 
