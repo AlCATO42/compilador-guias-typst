@@ -159,6 +159,13 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
   ]
   #v(2.5pt)
 
+  #actividad-card("4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica")[
+    *Misión de escucha:* Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
+
+
+  ]
+  #v(2.5pt)
+
 
 
 
