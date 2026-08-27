@@ -6,13 +6,13 @@
   paper: "us-letter",
   margin: (x: 8.5mm, top: 24mm, bottom: 8.5mm),
   header: context [
-    #let tiene_izq = false
-    #let tiene_der = false
+    #let tiene_izq = true
+    #let tiene_der = true
     #if tiene_izq and tiene_der [
       #grid(
-        columns: (50pt, 1fr, 50pt),
+        columns: (40pt, 1fr, 40pt),
         align: (center + horizon, center + horizon, center + horizon),
-        image("logo_izq.png", height: 50pt, fit: "contain"),
+        image("logo_izq.png", height: 40pt, fit: "contain"),
         align(center)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
           #v(-4.5pt)
@@ -20,13 +20,13 @@
           #v(-5.0pt)
           #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ],
-        image("logo_der.png", height: 50pt, fit: "contain")
+        image("logo_der.png", height: 40pt, fit: "contain")
       )
     ] else if tiene_izq [
       #grid(
-        columns: (50pt, 1fr),
+        columns: (40pt, 1fr),
         align: (center + horizon, center + horizon),
-        image("logo_izq.png", height: 50pt, fit: "contain"),
+        image("logo_izq.png", height: 40pt, fit: "contain"),
         align(center)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
           #v(-4.5pt)
@@ -37,7 +37,7 @@
       )
     ] else if tiene_der [
       #grid(
-        columns: (1fr, 50pt),
+        columns: (1fr, 40pt),
         align: (center + horizon, center + horizon),
         align(center)[
           #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
@@ -46,7 +46,7 @@
           #v(-5.0pt)
           #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ],
-        image("logo_der.png", height: 50pt, fit: "contain")
+        image("logo_der.png", height: 40pt, fit: "contain")
       )
     ] else [
       #align(center)[
@@ -80,17 +80,17 @@
 
 #let box-objetivo(cuerpo) = block(
   fill: rgb("#e8f0fe"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + primary-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-dark, size: 12pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-dark, size: 11.5pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
 )
 
 #let box-sabias(cuerpo) = block(
   fill: rgb("#fef7e0"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + accent-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: rgb("#92400e"), size: 12pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: rgb("#92400e"), size: 11.5pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
 )
 
 #let actividad-card(titulo, cuerpo, bg: rgb("#ffffff")) = block(
   fill: bg, inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: 0.45pt + rgb("#d0d7de"), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-color, size: 12pt)[#titulo] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-color, size: 11.5pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
 
 #let caja-multimedia(tipo, btnTexto, url, archivo-qr) = {
@@ -148,7 +148,7 @@
     #grid(
       columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
       [
-        #text(weight: "bold", fill: rgb("#6d28d9"), size: 12pt)[📝 #titulo] \
+        #text(weight: "bold", fill: rgb("#6d28d9"), size: 11.5pt)[📝 #titulo] \
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:] \
         #v(2.5pt)
@@ -171,7 +171,7 @@
   ]
 )
 
-#align(center)[#text(size: 14pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
+#align(center)[#text(size: 13pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
 #v(0.3pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 1.5pt))[
@@ -246,7 +246,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLScEY3d013CvXtoJT0_esL9ncJ2ln_cznj85XUpAIjaLGSxXgQ/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdVNAwM9hGzSezu1HB_G2ZicyCIWxZSD69pKCXSrKh7i0OYDA/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
