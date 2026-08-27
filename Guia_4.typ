@@ -100,13 +100,13 @@
     Comprender las causas, el desarrollo y las consecuencias de la Segunda Guerra Mundial, analizando el impacto de la tecnología, las ideologías extremas y la violación de los derechos humanos en la sociedad global del siglo XX.
   ])
 
-  #v(1.4pt)
+  #v(2.0pt)
 
 
   #box-sabias([
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
   ])
-  #v(1.4pt)
+  #v(2.0pt)
 
 
 
@@ -119,7 +119,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
   ]
-  #v(1.4pt)
+  #v(2.0pt)
 
 
 
