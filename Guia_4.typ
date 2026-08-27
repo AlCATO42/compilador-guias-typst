@@ -27,7 +27,7 @@
   ]
 )
 
-#set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
+#set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
 #set par(justify: true, leading: 0.35em)
 
 #let primary-color = rgb("#1a73e8")
@@ -36,17 +36,17 @@
 
 #let box-objetivo(cuerpo) = block(
   fill: rgb("#e8f0fe"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + primary-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-dark, size: 8.2pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-dark, size: 11.0pt)[🎯 Objetivo de Aprendizaje] \ #v(0.3pt) #cuerpo]
 )
 
 #let box-sabias(cuerpo) = block(
   fill: rgb("#fef7e0"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + accent-color), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: rgb("#b06000"), size: 8.2pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: rgb("#b06000"), size: 11.0pt)[💡 ¿Sabías que...?] \ #v(0.3pt) #cuerpo]
 )
 
 #let actividad-card(titulo, cuerpo, bg: rgb("#ffffff")) = block(
   fill: bg, inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: 0.45pt + rgb("#d0d7de"), width: 100%, breakable: true,
-  [#text(weight: "bold", fill: primary-color, size: 8.2pt)[#titulo] \ #v(0.3pt) #cuerpo]
+  [#text(weight: "bold", fill: primary-color, size: 11.0pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
 
 #let caja-multimedia(tipo, btnTexto, url, archivo-qr) = block(
@@ -70,30 +70,36 @@
   )
 )
 
-#let box-evaluacion(titulo, url, qr) = block(
-  fill: rgb("#f5f3ff"), stroke: 0.7pt + rgb("#c4b5fd"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: false,
-  grid(
-    columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
-    [
-      #text(weight: "bold", fill: rgb("#6d28d9"), size: 8.2pt)[📝 #titulo] \
-      #v(1.0pt)
-      #text(size: 6.6pt)[Escanea el código QR o haz clic en el botón para responder la evaluación digital.] \
-      #v(2.5pt)
-      #link(url)[
-        #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
-          #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN ↗]
+#let box-evaluacion(titulo, url, qr, cuerpo) = block(
+  fill: rgb("#f5f3ff"), stroke: 0.7pt + rgb("#c4b5fd"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: true,
+  [
+    #grid(
+      columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
+      [
+        #text(weight: "bold", fill: rgb("#6d28d9"), size: 11.0pt)[📝 #titulo] \
+        #v(1.0pt)
+        #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:] \
+        #v(2.5pt)
+        #link(url)[
+          #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
+            #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
+          ]
+        ]
+      ],
+      [
+        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.35pt + rgb("#c4b5fd"))[
+          #image(qr, width: 36pt, fit: "contain")
         ]
       ]
-    ],
-    [
-      #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.35pt + rgb("#c4b5fd"))[
-        #image(qr, width: 36pt, fit: "contain")
-      ]
-    ]
-  )
+    )
+    #v(3.0pt)
+    #line(length: 100%, stroke: 0.35pt + rgb("#c4b5fd"))
+    #v(1.0pt)
+    #cuerpo
+  ]
 )
 
-#align(center)[#text(size: 9.8pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
+#align(center)[#text(size: 13.0pt, weight: "bold", fill: primary-dark)[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
 #v(0.3pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 1.5pt))[
@@ -129,7 +135,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3pt)
     #align(center)[
       #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%, fit: "contain")
+        #image("img_act_1.jpg", width: 100%, fit: "contain")
       ]
     ]
     #v(3pt)
@@ -168,7 +174,21 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSczP7EdbRIhM5V7vLwBPWvbfrWvIfae-pYmY3TGt9lRiPDshw/viewform", "qr_evaluacion.png")
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdjm08AhdhrMHdSsW0Gi8_u5n6_8ajgDM1K1G0CC0WjtCeh6Q/viewform", "qr_evaluacion.png", [
+    
+    #v(2.0pt) * ¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios? *
+    #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
+    #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles. \ 
+    #h(6pt) c) La alianza pacífica con la Unión Soviética. \ 
+    #h(6pt) d) La eliminación voluntaria del ejército alemán. \ 
+
+    #v(2.0pt) * ¿Qué caracterizó la propaganda en los regímenes totalitarios? *
+    #h(6pt) a) El debate abierto en medios de comunicación independientes. \ 
+    #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder. \ 
+    #h(6pt) c) La libre circulación de prensa extranjera. \ 
+    #h(6pt) d) La prohibición de mítines y discursos públicos. \ 
+
+  ])
   #v(2.5pt)
 
 
