@@ -35,13 +35,11 @@
 )
 
 #set text(font: ("Segoe UI", "Arial", "Liberation Sans"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.6em)
+#set par(justify: true, leading: 0.50em)
 
 #let primary-color = rgb("#1a73e8")
 #let primary-dark = rgb("#0d47a1")
 #let accent-color = rgb("#d97706")
-#let bg-multimedia = rgb("#e2e8f0")
-#let stroke-multimedia = rgb("#64748b")
 
 #let box-objetivo(cuerpo) = block(
   fill: rgb("#e8f0fe"), inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: (left: 2.5pt + primary-color), width: 100%, breakable: true,
@@ -58,27 +56,39 @@
   [#text(weight: "bold", fill: primary-color, size: 12pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
 
-// Caja Multimedia con fondo oscuro de alto contraste
-#let caja-multimedia(tipo, btnTexto, url, archivo-qr) = block(
-  fill: bg-multimedia, stroke: 0.75pt + stroke-multimedia, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
-  grid(
-    columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
-    [
-      #text(size: 7.0pt, weight: "bold", fill: rgb("#0f172a"))[🔗 Recurso Interactivo:] \
-      #v(2.5pt)
-      #link(url)[
-        #box(fill: if tipo == "youtube" { rgb("#cc0000") } else { primary-color }, radius: 2.0pt, inset: (x: 6.5pt, y: 3.2pt))[
-          #text(fill: white, weight: "bold", size: 6.5pt)[#btnTexto]
+// Macro inteligente de Cajas Multimedia con Colores Temáticos Dominantes
+#let caja-multimedia(tipo, btnTexto, url, archivo-qr) = {
+  let (bg-col, border-col, btn-col, text-col, icon-label) = if tipo == "youtube" {
+    (rgb("#fee2e2"), rgb("#dc2626"), rgb("#b91c1c"), rgb("#991b1b"), "▶ Video Interactivo (YouTube):")
+  } else if tipo == "spotify" {
+    (rgb("#dcfce7"), rgb("#16a34a"), rgb("#15803d"), rgb("#166534"), "🎧 Podcast / Audio (Spotify):")
+  } else if tipo == "drive" {
+    (rgb("#dbeafe"), rgb("#2563eb"), rgb("#1d4ed8"), rgb("#1e40af"), "📁 Archivo / Documento (Drive):")
+  } else {
+    (rgb("#e2e8f0"), rgb("#64748b"), rgb("#0f172a"), rgb("#1e293b"), "🔗 Recurso Interactivo:")
+  }
+
+  block(
+    fill: bg-col, stroke: 0.85pt + border-col, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
+    grid(
+      columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
+      [
+        #text(size: 6.9pt, weight: "bold", fill: text-col)[#icon-label] \
+        #v(2.0pt)
+        #link(url)[
+          #box(fill: btn-col, radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+            #text(fill: white, weight: "bold", size: 6.5pt)[#btnTexto]
+          ]
+        ]
+      ],
+      [
+        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + border-col)[
+          #image(archivo-qr, width: 60pt, fit: "contain")
         ]
       ]
-    ],
-    [
-      #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + stroke-multimedia)[
-        #image(archivo-qr, width: 60pt, fit: "contain")
-      ]
-    ]
+    )
   )
-)
+}
 
 #let box-evaluacion(titulo, url, qr, cuerpo) = block(
   fill: rgb("#f5f3ff"), stroke: 0.75pt + rgb("#8b5cf6"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: true,
@@ -149,7 +159,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
       ]
     ]
     #v(3.5pt)
-    #caja-multimedia("web", "ABRIR RECURSO ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
+    #caja-multimedia("drive", "ABRIR EN DRIVE ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
   ]
   #v(2.5pt)
 
@@ -184,7 +194,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfCgfwbeFJXFluZzU5AL_M7GzF70Ft2NDyCK3cp463Utw05NA/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfgnkBcWYX-sD-lnQrli8eqznoDRLCyJDAS6AHY3ROqpmG6jA/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) * ¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios? *
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
