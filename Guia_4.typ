@@ -142,6 +142,17 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
   ]
   #v(2.5pt)
 
+  #actividad-card("3. El Estallido de la Guerra Total (prueba)")[
+    Copia en tu cuaderno este texto introductorio:
+
+Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
+
+
+    #v(3pt)
+    #caja-multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
+  ]
+  #v(2.5pt)
+
 
 
 
