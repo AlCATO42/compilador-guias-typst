@@ -149,6 +149,12 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
     #v(3pt)
+    #align(center)[
+      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_1.jpg", width: 92%, fit: "contain")
+      ]
+    ]
+    #v(3pt)
     #caja-multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
   ]
   #v(2.5pt)
