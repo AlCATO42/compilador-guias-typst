@@ -127,6 +127,12 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
     #v(3pt)
+    #align(center)[
+      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_1.jpg", width: 92%, fit: "contain")
+      ]
+    ]
+    #v(3pt)
     #caja-multimedia("web", "ABRIR RECURSO ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
   ]
   #v(2.5pt)
@@ -149,13 +155,184 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
     #v(3pt)
-    #align(center)[
-      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%, fit: "contain")
-      ]
-    ]
-    #v(3pt)
     #caja-multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
+  ]
+  #v(2.5pt)
+
+  #actividad-card("4. EVALUACIÓN FORMATIVA Y RETROALIMENTACIÓN")[
+    Esperamos que esta guía sobre la Segunda Guerra Mundial te haya sido útil. Por favor, completa el cuestionario para ver tu calificación y descargala de tu correo electrónico. Recuerda revisar las actividades de la guia y pegarla en tu cuaderno. **¡Muchos éxitos!**
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("5. ¿Por qué la Segunda Guerra Mundial es catalogada históricamente como una \"guerra total\"?")[
+    A) Porque se combatió exclusivamente en bases militares marítimas y aéreas.
+
+*B) Porque borró las fronteras entre combatientes y población civil, movilizando todos los recursos de las naciones hacia la destrucción mutua.
+
+C) Porque participaron únicamente los países pertenecientes al continente europeo.
+
+D) Porque fue un conflicto breve resuelto mediante acuerdos diplomáticos sin ataques a ciudades.
+
+[Acierto]: ¡Excelente análisis! Comprendiste con precisión el concepto de "guerra total": a diferencia de las guerras clásicas, en este conflicto las ciudades, las fábricas y millones de civiles inocentes pasaron a ser objetivos militares estratégicos directos.
+
+[Refuerzo - Cuaderno]: 📝 Copia en tu cuaderno la siguiente definición: "La guerra total (1939-1945) se caracterizó por movilizar la totalidad de la economía y la sociedad civil hacia el esfuerzo bélico, convirtiendo a las ciudades y a la población no combatiente en blancos directos de bombardeos y exterminio".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("6. ¿Cómo influyó el contexto de entreguerras (1919-1939) en el ascenso del extremismo nazi al poder?")[
+    A) El Tratado de Versalles benefició económicamente a Alemania e impulsó su desarme pacífico.
+
+*B) Las sanciones punitivas del Tratado de Versalles sumadas a la devastación económica de la Gran Depresión de 1929 facilitaron el discurso revanchista y autoritario.
+
+C) Alemania mantenía una monarquía absolutista que declaró la guerra para expandir sus colonias en África.
+
+D) La Sociedad de Naciones intervino militarmente con éxito para frenar la inflación en Berlín.
+
+[Acierto]: ¡Magnífica deducción histórica! Identificaste cómo la humillación diplomática del Tratado de Versalles y el desempleo masivo tras la crisis de 1929 fueron el caldo de cultivo que el nacionalsocialismo utilizó para manipular el descontento popular y ascender democráticamente al poder.
+
+[Refuerzo - Cuaderno]: 📝 Copia en tu cuaderno: "El extremismo nazi se nutrió de dos detonantes estructurales: el resentimiento nacional provocado por las condiciones humillantes del Tratado de Versalles (1919) y el colapso económico mundial provocado por la crisis de 1929".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("7. ¿Cuál fue la principal diferencia técnica y operativa de la Blitzkrieg (Guerra Relámpago) frente a la Primera Guerra Mundial?")[
+    A) La adopción de trincheras fijas y el uso defensivo de gases tóxicos en las fronteras.
+
+*B) La coordinación ofensiva y veloz de divisiones blindadas (tanques) con apoyo aéreo táctico, rompiendo la parálisis del frente.
+
+C) El empleo exclusivo de infantería a pie respaldada por flotas marítimas de ultramar.
+
+D) La renuncia deliberada a invadir ciudades para concentrarse únicamente en fuertes fronterizos.
+
+[Acierto]: ¡Respuesta correcta! Supiste contrastar la guerra de desgaste de 1914 con la doctrina militar de 1939: la Blitzkrieg buscaba penetrar velozmente las defensas enemigas con blindados y aviación coordinada antes de que el adversario pudiera organizar una resistencia en el terreno.
+
+[Refuerzo - Cuaderno]: 📝 Escribe en tu cuaderno: "A diferencia de la guerra de trincheras de 1914, la Blitzkrieg alemana combinó velocidad, sorpresa y ataque concentrado de aviación y carros de combate para colapsar rápidamente las líneas enemigas".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("8. ¿Qué giro estratégico en 1941 transformó la contienda europea en un conflicto verdaderamente planetario?")[
+    A) La retirada de Italia del Pacto Tripartito y el cese al fuego en el norte de África.
+
+*B) La invasión nazi a la Unión Soviética (Operación Barbarroja) y el ataque japonés a Pearl Harbor que provocó la entrada de Estados Unidos.
+
+C) La firma del pacto de no agresión entre Japón y Gran Bretaña.
+
+D) La rendición inmediata de Francia y su neutralidad en el océano Atlántico.
+
+[Acierto]: ¡Exacto! Reconociste el punto de quiebre geopolítico de 1941: al abrir el frente oriental contra la URSS y desatar la guerra en el Pacífico contra EE. UU., el Eje incorporó a dos colosos industriales y militares que terminaron sellando su derrota.
+
+[Refuerzo - Cuaderno]: 📝 Consigna en tu cuaderno: "En 1941 la guerra se globalizó definitivamente debido a dos hechos cruciales: la invasión alemana a la Unión Soviética y el ataque japonés a la base naval de Pearl Harbor, forzando la entrada militar de Estados Unidos a la coalición Aliada".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("9. Frente a la afirmación documental: \"El Holocausto no fue un efecto colateral de la guerra, era parte del proyecto\", ¿qué conclusión se desprende sobre el régimen nazi?")[
+    A) Que los campos de concentración fueron improvisados al final del conflicto por escasez de recursos.
+
+*B) Que la aniquilación sistemática e industrializada de millones de judíos y minorías formaba parte del núcleo ideológico y estratégico de la expansión militar.
+
+C) Que las muertes de civiles se debieron exclusivamente a bombardeos aéreos y no a una política premeditada.
+
+D) Que la violencia racial fue rechazada por la cúpula nazi y aplicada de forma aislada.
+
+[Acierto]: ¡Brillante juicio crítico! Comprendiste que la Shoah (Holocausto) no fue una consecuencia accidental de la violencia bélica, sino un objetivo ideológico premeditado para el cual el Estado nazi empleó la ciencia, el transporte y la industria como maquinaria de exterminio.
+
+[Refuerzo - Cuaderno]: 📝 Escribe en tu cuaderno: "El Holocausto fue un genocidio sistemático y planificado por el Estado nazi: el uso de fábricas de muerte como Auschwitz demostró que el exterminio de seis millones de judíos era un objetivo central de la guerra, no un efecto secundario".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("10. A partir del testimonio del Diario de Ana Frank (9 de octubre de 1942), ¿cuál era el objetivo psicológico y logístico de transportar a las familias en \"vagones de ganado\"?")[
+    A) Agilizar los viajes turísticos de evacuación voluntaria hacia países vecinos neutrales.
+
+*B) Deshumanizar, hacinar y quebrar moralmente a las víctimas antes de su confinamiento en los campos de concentración.
+
+C) Garantizar un traslado cómodo y seguro para proteger a las mujeres y niños de los bombardeos.
+
+D) Ocultar a los prisioneros para evitar que fueran reclutados por el ejército holandés.
+
+[Acierto]: ¡Gran sensibilidad y empatía histórica! Identificaste la lógica de la deshumanización nazi: despojar a los perseguidos de su condición humana desde el transporte para quebrar cualquier capacidad de resistencia física y emocional.
+
+[Refuerzo - Cuaderno]: 📝 Copia este análisis en tu cuaderno: "El régimen nazi utilizó vagones de carga y ganado para trasladar prisioneros con el fin premeditado de deshumanizarlos, despojándolos de dignidad, agua y espacio, facilitando así su control y posterior asesinato industrial".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("11. Según el registro fotográfico del \"Álbum de Auschwitz\" preservado por Yad Vashem, ¿qué ocurría inmediatamente al llegar los trenes a la rampa de selección?")[
+    A) Se realizaban elecciones democráticas para designar a los líderes de los dormitorios comunitarios.
+
+*B) Los oficiales de las SS separaban arbitrariamente a las familias, enviando a ancianos y niños directamente a las cámaras de gas y a los aptos al trabajo forzado.
+
+C) Se les reintegraban sus pertenencias de valor para iniciar trámites de reubicación laboral civil.
+
+D) Se les ofrecía atención médica especializada y alojamiento en hoteles de la Cruz Roja.
+
+[Acierto]: ¡Respuesta rigurosa y correcta! La rampa de Birkenau era el escenario más cruel de la maquinaria nazi, donde en cuestión de segundos se rompían los lazos familiares y se dictaminaba la vida o la muerte inmediata.
+
+[Refuerzo - Cuaderno]: 📝 Consigna en tu cuaderno: "En el proceso de llegada a Auschwitz-Birkenau, los médicos y soldados de las SS aplicaban la 'selección': una ruptura violenta donde el 75%-80% de las personas (ancianos, enfermos y niños) eran conducidas directamente a las cámaras de gas".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("12. En medio del terror en Roma, ¿en qué consistió la acción clandestina de rescate conocida como el \"Síndrome K\" en el Hospital Fatebenefratelli?")[
+    A) En un ataque con armas químicas ejecutado por la resistencia italiana contra cuarteles de la Gestapo.
+
+*B) En el diagnóstico de una enfermedad altamente contagiosa e inventada por médicos para aislar y salvar a decenas de familias judías de la deportación.
+
+C) En una campaña de propaganda radial para convencer al ejército alemán de abandonar la península.
+
+D) En un ensayo médico autorizado por los Aliados para curar epidemias entre las tropas del Eje.
+
+[Acierto]: ¡Excelente comprensión del relato histórico! Valoraste cómo la inteligencia médica y la ética profesional se transformaron en un acto de resistencia civil heroico para engañar a los oficiales nazis y salvar vidas humanas.
+
+[Refuerzo - Cuaderno]: 📝 Escribe en tu cuaderno: "El 'Síndrome K' fue una enfermedad ficticia creada por el médico Giovanni Borromeo en Roma; al hacerla pasar por un padecimiento mortal y muy contagioso, logró que los soldados nazis no revisaran las salas y se salvaran decenas de judíos perseguidos".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("13. ¿Qué impacto ético y geopolítico inmediato causó el lanzamiento de las bombas atómicas sobre Hiroshima y Nagasaki en agosto de 1945?")[
+    A) La disolución pacífica de los ejércitos mundiales y el desarme nuclear generalizado.
+
+*B) La rendición incondicional de Japón junto con la inauguración de la era atómica y el terror a una aniquilación masiva global.
+
+C) La firma de un tratado de unión política entre Japón y la Unión Soviética.
+
+D) El fortalecimiento militar del Eje en las colonias del sudeste asiático.
+
+[Acierto]: ¡Exacto! Entendiste la paradoja de 1945: las bombas atómicas pusieron fin al conflicto en el Pacífico, pero iniciaron un orden mundial condicionado por la amenaza termonuclear y la capacidad de autodestrucción de la humanidad.
+
+[Refuerzo - Cuaderno]: 📝 Copia en tu cuaderno: "El bombardeo nuclear a Hiroshima y Nagasaki en 1945 no solo precipitó el fin de la Segunda Guerra Mundial, sino que causó la muerte instantánea de más de 100.000 civiles y dio inicio a la era nuclear bajo la amenaza de destrucción global".
+
+
+  ]
+  #v(2.5pt)
+
+  #actividad-card("14. Al finalizar la guerra en 1945 con un saldo superior a 50 millones de víctimas mortales, ¿cuál fue la principal transformación institucional para salvaguardar la paz mundial?")[
+    A) La restauración de las monarquías absolutistas en Europa Central.
+
+*B) La fundación de la Organización de las Naciones Unidas (ONU) y la posterior proclamación de los Derechos Humanos.
+
+C) La división del continente americano en bloques armados opuestos.
+
+D) El cierre definitivo de fronteras y la eliminación de embajadas diplomáticas.
+
+[Acierto]: ¡Completaste la evaluación con éxito! Reconociste el mayor aprendizaje de la posguerra: tras la barbarie del conflicto y los campos de exterminio, la comunidad internacional entendió la urgencia de crear la ONU para mediar controversias y defender la dignidad humana.
+
+[Refuerzo - Cuaderno]: 📝 Registra como conclusión en tu cuaderno: "Como respuesta a la devastación demográfica de la Segunda Guerra Mundial y al horror del genocidio, en 1945 se creó la Organización de las Naciones Unidas (ONU), estableciendo un marco internacional para prevenir guerras y defender los Derechos Humanos".
+
+
   ]
   #v(2.5pt)
 
