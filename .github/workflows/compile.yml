@@ -1,0 +1,38 @@
+name: Compilador Typst Cloud
+
+on:
+  push:
+    paths:
+      - '**.typ'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Compilar archivos Typst a PDF
+        run: |
+          for file in *.typ; do
+            if [ -f "$file" ]; then
+              filename="${file%.*}"
+              echo "Compilando $file a ${filename}.pdf..."
+              typst compile "$file" "${filename}.pdf"
+            fi
+          done
+
+      - name: Guardar y sincronizar PDF
+        run: |
+          git config --global user.name "Typst Cloud Bot"
+          git config --global user.email "bot@typst-cloud.local"
+          git add *.pdf
+          git commit -m "Auto-compilación PDF [skip ci]" || echo "Sin cambios pendientes"
+          git push
