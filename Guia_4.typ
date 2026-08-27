@@ -136,8 +136,6 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
-Enlace al video de Youtube: https://www.youtube.com/watch?v=2f3rCpvBq30
-
 
     #v(3pt)
     #caja-multimedia("youtube", "VER VIDEO EN YOUTUBE ↗", "https://www.youtube.com/watch?v=2f3rCpvBq30", "qr_act_2.png")
