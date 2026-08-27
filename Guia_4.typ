@@ -168,5 +168,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSczP7EdbRIhM5V7vLwBPWvbfrWvIfae-pYmY3TGt9lRiPDshw/viewform", "qr_evaluacion.png")
+  #v(2.5pt)
+
 
 ]
