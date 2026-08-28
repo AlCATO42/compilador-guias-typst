@@ -4,27 +4,29 @@
 
 #set page(
   paper: "us-letter",
-  margin: (x: 9mm, top: 27mm, bottom: 16mm),
+  margin: (x: 9mm, top: 32mm, bottom: 11mm),
   header: context [
-    #v(4.0pt)
+    #v(2.0pt)
 
     #grid(
-      columns: (40pt, 1fr, 40pt),
+      columns: (38pt, 1fr, 38pt),
       align: (center + horizon, center + horizon, center + horizon),
-      box(width: 40pt, height: 40pt, align(center + horizon)[#image("logo_izq.png", fit: "contain")]),
+      box(width: 38pt, height: 38pt, align(center + horizon)[#image("logo_izq.png", fit: "contain")]),
 
       align(center + horizon)[
-        #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)]
-        #v(1.5pt)
-        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)]
-        #v(1.5pt)
-        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        #par(leading: 0.22em)[
+          #text(size: 10.5pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
+          #v(-1.5pt)
+          #text(size: 6.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+          #v(-2.0pt)
+          #text(size: 6.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        ]
       ]
   ,
-      box(width: 40pt, height: 40pt, align(center + horizon)[#image("logo_der.png", fit: "contain")])
+      box(width: 38pt, height: 38pt, align(center + horizon)[#image("logo_der.png", fit: "contain")])
     )
     
-    #v(2.0pt)
+    #v(2.5pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
   ],
   footer: context [
@@ -98,6 +100,13 @@
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
+
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_1.jpg", width: 100%)
+      ]
+    ]
 
     #v(3.5pt)
     #block(
@@ -230,6 +239,42 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
     #v(2.0pt)
     #emph[Misión de escucha:]Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
+
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_2.png", width: 100%)
+      ]
+    ]
+
+    #v(3.5pt)
+    #block(
+      fill: rgb("#f5f3ff"),
+      stroke: 0.85pt + rgb("#8b5cf6"),
+      radius: 3.5pt,
+      inset: 4.5pt,
+      width: 100%,
+      breakable: false,
+      grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        gutter: 6.0pt,
+        [
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#5b21b6"))[🎨 Diseño Interactivo (Canva):]
+          #v(2.0pt)
+          #link("https://canva.link/pzsfexlfnjoqb8p")[
+            #box(fill: rgb("#7c3aed"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR EN CANVA ↗]
+            ]
+          ]
+        ],
+        [
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
+            #image("qr_act_4.png", width: 60pt)
+          ]
+        ]
+      )
+    )
   ]
   #v(2.5pt)
 
@@ -252,7 +297,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSd7u3ZrnnP5uSVI_DjPMRDLk80whUO22wAx9uMpqUMLER2RBA/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSd5tl2nNQJ4aESLBVmxu3NPXDmvxXeE0Kvj6ol-NDGeQiEHew/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
