@@ -105,13 +105,6 @@
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.jpg", width: 92%)
-      ]
-    ]
-
     #v(3.5pt)
     #block(
       fill: rgb("#dbeafe"),
@@ -251,13 +244,6 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(2.0pt)
     #emph[Misión de escucha:]Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_4.png", width: 92%)
-      ]
-    ]
-
     #v(3.5pt)
     #block(
       fill: rgb("#f5f3ff"),
@@ -308,7 +294,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSdMlZz_FY3KCJgi1R9Two05grD0gbdo7i5Gbt4M8HvGWDUAvw/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSeIvCH2ybspMJQayNQhJl77PXZo2ZehcsACMwkOslY7kD1Gxw/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
