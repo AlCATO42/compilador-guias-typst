@@ -91,13 +91,21 @@
   header: context [
     #v(3.5pt)
 
-      #align(center + horizon)[
-        #text(size: 9.0pt, weight: "bold", fill: primary_dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
-        #v(-4.0pt)
-        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-        #v(-4.5pt)
-        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-      ]
+      #grid(
+        columns: (28pt, 1fr, 28pt),
+        align: (center + horizon, center + horizon, center + horizon),
+        [#image("logo_izq.png", height: 28pt)],
+        
+    [
+      #text(size: 9.0pt, weight: "bold", fill: primary_dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
+      #v(-4.0pt)
+      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+      #v(-4.5pt)
+      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+    ]
+  ,
+        [#image("logo_der.png", height: 28pt)]
+      )
     
     #v(-1.5pt)
     #line(length: 100%, stroke: 0.9pt + primary_color)
@@ -267,7 +275,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSeFRiKPMf2Mv29dxHAm1h536u7mmKwbWTSZNIn5hbeMMt20Ag/viewform", "qr_evaluacion.png", [
+  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdbZq4nZ5390POnSv1LkdvkYzib5eBxvW7YhN33ZfPMJEtV0g/viewform", "qr_evaluacion.png", [
     #par(justify: false)[
 *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
 #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
