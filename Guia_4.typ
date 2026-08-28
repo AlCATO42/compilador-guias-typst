@@ -4,24 +4,24 @@
 
 #set page(
   paper: "us-letter",
-  margin: (x: 8.5mm, top: 26mm, bottom: 8.5mm),
+  margin: (x: 9mm, top: 27mm, bottom: 11mm),
   header: context [
-    #v(3.5pt)
+    #v(4.0pt)
 
     #grid(
-      columns: (28pt, 1fr, 28pt),
+      columns: (30pt, 1fr, 30pt),
       align: (center + horizon, center + horizon, center + horizon),
-      image("logo_izq.png", height: 28pt, fit: "contain"),
+      box(width: 30pt, height: 30pt, align(center + horizon)[#image("logo_izq.png", fit: "contain")]),
 
-      [
+      align(center + horizon)[
         #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)]
-        #v(2.0pt)
+        #v(1.5pt)
         #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)]
-        #v(2.0pt)
+        #v(1.5pt)
         #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
       ]
   ,
-      image("logo_der.png", height: 28pt, fit: "contain")
+      box(width: 30pt, height: 30pt, align(center + horizon)[#image("logo_der.png", fit: "contain")])
     )
     
     #v(2.0pt)
@@ -29,7 +29,7 @@
   ],
   footer: context [
     #line(length: 100%, stroke: 0.35pt + rgb("#dcdcdc"))
-    #v(2pt)
+    #v(2.0pt)
     #grid(
       columns: (1fr, auto),
       [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · #text("clasecienciasociales@gmail.com")]],
@@ -39,10 +39,10 @@
 )
 
 #set text(font: ("Liberation Sans", "DejaVu Sans", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.35em)
+#set par(justify: true, leading: 0.36em)
 
 #align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
-#v(1pt)
+#v(1.0pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 2.0pt))[
   #text(size: 7.0pt)[
@@ -50,9 +50,9 @@
   ]
 ]
 
-#v(2pt)
+#v(2.0pt)
 
-#columns(2, gutter: 7.0pt)[
+#columns(2, gutter: 7.5pt)[
 
   #block(
     fill: rgb("#e8f0fe"),
@@ -191,10 +191,10 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
   #v(2.5pt)
 
   #block(
-    fill: rgb("#ffffff"),
+    fill: rgb("#ffedd5"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
-    stroke: 0.45pt + rgb("#d0d7de"),
+    stroke: 0.45pt + rgb("#ccbaa2"),
     width: 100%,
     breakable: true
   )[
@@ -245,7 +245,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
     #v(2.0pt)
-    Misión de escucha: Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
+    *Misión de escucha:* Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
     #v(3.0pt)
     #align(center)[
@@ -304,7 +304,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSdQ0PneiKi9edAykxdzXYNSYzIElvDA_mwrxJBeYHN8x_eC4A/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSdXVX0OJImHQ99QKz3GOu47VivKEPKLLKjB6-8zsMICHtVI7A/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
