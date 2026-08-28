@@ -8,11 +8,19 @@
   header: context [
     #v(3.5pt)
 
-    #align(center + horizon)[
-      #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-    ]
+    #grid(
+      columns: (28pt, 1fr, 28pt),
+      align: (center + horizon, center + horizon, center + horizon),
+      image("logo_izq.png", height: 28pt, fit: "contain"),
+
+      [
+        #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
+        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+      ]
+  ,
+      image("logo_der.png", height: 28pt, fit: "contain")
+    )
     
     #v(2.0pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
@@ -52,7 +60,8 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje] \
+    #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje]
+    #v(2.0pt)
     Comprender las causas, el desarrollo y las consecuencias de la Segunda Guerra Mundial, analizando el impacto de la tecnología, las ideologías extremas y la violación de los derechos humanos en la sociedad global del siglo XX.
   ]
 
@@ -67,7 +76,8 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?] \
+    #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
+    #v(2.0pt)
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
   ]
   #v(2.5pt)
@@ -82,7 +92,8 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total] \
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total]
+    #v(2.0pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
@@ -107,7 +118,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         align: (left + horizon, right + horizon),
         gutter: 6.0pt,
         [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e40af"))[📁 Archivo / Documento (Drive):] \
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e40af"))[📁 Archivo / Documento (Drive):]
           #v(2.0pt)
           #link("https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing")[
             #box(fill: rgb("#1d4ed8"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
@@ -133,7 +144,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Estallido de la Guerra Total] \
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Estallido de la Guerra Total]
+    #v(2.0pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
@@ -151,7 +163,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         align: (left + horizon, right + horizon),
         gutter: 6.0pt,
         [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#991b1b"))[▶ Video Interactivo (YouTube):] \
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#991b1b"))[▶ Video Interactivo (YouTube):]
           #v(2.0pt)
           #link("https://www.youtube.com/watch?v=2f3rCpvBq30")[
             #box(fill: rgb("#b91c1c"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
@@ -177,7 +189,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El Estallido de la Guerra Total (prueba)] \
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El Estallido de la Guerra Total (prueba)]
+    #v(2.0pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
@@ -195,7 +208,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         align: (left + horizon, right + horizon),
         gutter: 6.0pt,
         [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:] \
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:]
           #v(2.0pt)
           #link("https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp")[
             #box(fill: rgb("#0f172a"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
@@ -221,7 +234,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica] \
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
+    #v(2.0pt)
     Misión de escucha: Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
     #v(3.0pt)
@@ -248,11 +262,11 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
       align: (left + horizon, right + horizon),
       gutter: 6.0pt,
       [
-        #text(weight: "bold", fill: rgb("#6d28d9"), size: 8.2pt)[📝 EVALUACIÓN FORMATIVA] \
+        #text(weight: "bold", fill: rgb("#6d28d9"), size: 8.2pt)[📝 EVALUACIÓN FORMATIVA]
         #v(1.0pt)
-        #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:] \
+        #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSczZBLy6UHHHxPbOIcxerUfElCUCEU6JDNMC0kDu8QUzAgsDg/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSfLse5-phNXrJDlkZiE1pyG9NJ_j_hgkg3w6DKN7xeaX9qx_Q/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
