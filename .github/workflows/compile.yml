@@ -4,12 +4,14 @@ on:
   push:
     paths:
       - '**.typ'
-      - '**.jpg'
-      - '**.png'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: typst-compilation
+  cancel-in-progress: true
 
 jobs:
   compile:
