@@ -38,10 +38,10 @@
   ]
 )
 
-#set text(font: ("Liberation Sans", "DejaVu Sans", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.35em)
+#set text(font: ("Roboto Serif", "Liberation Sans", "DejaVu Sans", "Arial"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
+#set par(justify: true, leading: 0.50em)
 
-#align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
+#align(center)[#text(size: 14pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
 #v(1.0pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 2.0pt))[
@@ -62,7 +62,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje]
+    #text(weight: "bold", fill: rgb("#0d47a1"), size: 11.5pt)[🎯 Objetivo de Aprendizaje]
     #v(2.0pt)
     Comprender las causas, el desarrollo y las consecuencias de la Segunda Guerra Mundial, analizando el impacto de la tecnología, las ideologías extremas y la violación de los derechos humanos en la sociedad global del siglo XX.
   ]
@@ -78,7 +78,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
+    #text(weight: "bold", fill: rgb("#92400e"), size: 11.5pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
   ]
@@ -94,7 +94,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total]
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
@@ -102,7 +102,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%)
+        #image("img_act_1.jpg", width: 100%)
       ]
     ]
 
@@ -129,7 +129,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#2563eb"))[
-            #image("qr_act_1.png", width: 36pt)
+            #image("qr_act_1.png", width: 60pt)
           ]
         ]
       )
@@ -145,7 +145,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Estallido de la Guerra Total.PRUEBA ALEXIS]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[2. El Estallido de la Guerra Total.PRUEBA ALEXIS]
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
@@ -173,7 +173,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_2.png", width: 36pt)
+            #image("qr_act_2.png", width: 60pt)
           ]
         ]
       )
@@ -189,7 +189,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El Estallido de la Guerra Total (prueba)]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[3. El Estallido de la Guerra Total (prueba)]
     #v(2.0pt)
     Copia en tu cuaderno este texto introductorio:
 
@@ -218,7 +218,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
-            #image("qr_act_3.png", width: 36pt)
+            #image("qr_act_3.png", width: 60pt)
           ]
         ]
       )
@@ -234,14 +234,14 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
     #v(2.0pt)
     #emph[Misión de escucha:]Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.png", width: 92%)
+        #image("img_act_2.png", width: 100%)
       ]
     ]
 
@@ -268,7 +268,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
-            #image("qr_act_4.png", width: 36pt)
+            #image("qr_act_4.png", width: 60pt)
           ]
         ]
       )
@@ -291,11 +291,11 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
       align: (left + horizon, right + horizon),
       gutter: 6.0pt,
       [
-        #text(weight: "bold", fill: rgb("#6d28d9"), size: 8.2pt)[📝 EVALUACIÓN FORMATIVA]
+        #text(weight: "bold", fill: rgb("#6d28d9"), size: 11.5pt)[📝 EVALUACIÓN FORMATIVA]
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSe9kiKCMqjbsbkjhaH9diBI6JsaC4o6tX_uNyQaQHzCPs0-UQ/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSd6ffK1BFv3cmqahShfihAdcRd797ZLMYWI8TNF6yZGEgQ9bg/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
@@ -303,7 +303,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
       ],
       [
         #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
-          #image("qr_evaluacion.png", width: 40pt)
+          #image("qr_evaluacion.png", width: 60pt)
         ]
       ]
     )
