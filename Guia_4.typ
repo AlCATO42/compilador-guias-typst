@@ -249,20 +249,21 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSf5Ls1aGHFD3EiWuWqWjF7nChrlKNTIC8_30Hk_76Rt9_9Mjg/viewform", "qr_evaluacion.png", [
+  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLScZ__pCVQf-BbYG2PQoc9wI0aEGbJJBMhi_z9jlyWEFI94goQ/viewform", "qr_evaluacion.png", [
     
-    #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
+    #v(2.5pt)
+    *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
     #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles. \ 
     #h(6pt) c) La alianza pacífica con la Unión Soviética. \ 
     #h(6pt) d) La eliminación voluntaria del ejército alemán. \ 
 
-    #v(2.5pt) *¿Qué caracterizó la propaganda en los regímenes totalitarios?* \ 
+    #v(2.5pt)
+    *¿Qué caracterizó la propaganda en los regímenes totalitarios?* \ 
     #h(6pt) a) El debate abierto en medios de comunicación independientes. \ 
     #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder. \ 
     #h(6pt) c) La libre circulación de prensa extranjera. \ 
-    #h(6pt) d) La prohibición de mítines y discursos públicos. \ 
-
+    #h(6pt) d) La prohibición de mítines y discursos públicos.
   ])
   #v(2.5pt)
 
