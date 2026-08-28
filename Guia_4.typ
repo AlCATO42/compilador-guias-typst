@@ -71,7 +71,7 @@
 
 
   #block(
-    fill: rgb("#fef9c3"),
+    fill: rgb("#fef7e0"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
     stroke: (left: 2.5pt + rgb("#d97706")),
@@ -80,17 +80,7 @@
   )[
     #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
-    Hola amigos
-
-
-
-En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%)
-      ]
-    ]
+    En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
   ]
   #v(2.5pt)
 
@@ -112,7 +102,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.jpg", width: 92%)
+        #image("img_act_1.jpg", width: 92%)
       ]
     ]
 
@@ -151,7 +141,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     fill: rgb("#ffffff"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
-    stroke: 0.45pt + rgb("#cccccc"),
+    stroke: 0.45pt + rgb("#d0d7de"),
     width: 100%,
     breakable: true
   )[
@@ -159,13 +149,6 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
-
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_3.png", width: 92%)
-      ]
-    ]
 
     #v(3.5pt)
     #block(
@@ -258,7 +241,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_4.png", width: 92%)
+        #image("img_act_2.png", width: 92%)
       ]
     ]
 
@@ -312,7 +295,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSd1j7rk04WerXSBoEBKWFNXOZhhPIxjAfi21suXZB51ksYcWA/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSe9kiKCMqjbsbkjhaH9diBI6JsaC4o6tX_uNyQaQHzCPs0-UQ/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
