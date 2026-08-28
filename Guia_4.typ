@@ -144,6 +144,13 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_2.png", width: 92%)
+      ]
+    ]
+
     #v(3.5pt)
     #block(
       fill: rgb("#fee2e2"),
@@ -235,7 +242,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.png", width: 92%)
+        #image("img_act_3.png", width: 92%)
       ]
     ]
   ]
@@ -260,7 +267,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLScZARZIwvdYC1HTf_1oq65cEFp9D5f6PYHmy3PLoJ5gKJy1AA/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSf8x4-YPeewlSFIqnmCryYlv43SYgJOOsy5G1c-JUV17G3fCg/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
