@@ -87,23 +87,23 @@
 
 
   #block(
-    fill: rgb("#ffffff"),
+    fill: rgb("#dcfce7"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
-    stroke: 0.45pt + rgb("#d0d7de"),
+    stroke: 0.45pt + rgb("#a9c9b4"),
     width: 100%,
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total]
     #v(2.0pt)
-    Copia en tu cuaderno este texto introductorio:
+    Copia en tu cuaderno este texto introductorio:*
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%)
+        #image("img_act_2.jpg", width: 92%)
       ]
     ]
 
@@ -155,7 +155,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.png", width: 92%)
+        #image("img_act_3.png", width: 92%)
       ]
     ]
 
@@ -250,7 +250,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_3.png", width: 92%)
+        #image("img_act_4.png", width: 92%)
       ]
     ]
 
@@ -304,7 +304,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSdXVX0OJImHQ99QKz3GOu47VivKEPKLLKjB6-8zsMICHtVI7A/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSdSIo374hWOx5cc66C6In21oqeycbGxbl_mwYIJxGGNULJSCw/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
