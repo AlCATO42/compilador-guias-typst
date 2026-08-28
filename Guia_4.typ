@@ -8,19 +8,13 @@
   header: context [
     #v(3.5pt)
 
-    #grid(
-      columns: (28pt, 1fr, 28pt),
-      align: (center + horizon, center + horizon, center + horizon),
-      image("logo_izq.png", height: 28pt, fit: "contain"),
-
-      [
-        #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-      ]
-  ,
-      image("logo_der.png", height: 28pt, fit: "contain")
-    )
+    #align(center + horizon)[
+      #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)]
+      #v(2.0pt)
+      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)]
+      #v(2.0pt)
+      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+    ]
     
     #v(2.0pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
@@ -36,7 +30,7 @@
   ]
 )
 
-#set text(font: ("Liberation Sans", "DejaVu Sans", "Segoe UI", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
+#set text(font: ("Liberation Sans", "DejaVu Sans", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
 #set par(justify: true, leading: 0.35em)
 
 #align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
@@ -266,7 +260,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSfLse5-phNXrJDlkZiE1pyG9NJ_j_hgkg3w6DKN7xeaX9qx_Q/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSdLEUlW5OQkZRIlQYuaUKBL_nUXU5BCLRszmWbG9APLjNuwQg/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
