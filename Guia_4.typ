@@ -7,21 +7,19 @@
   margin: (x: 8.5mm, top: 26mm, bottom: 8.5mm),
   header: context [
     #v(3.5pt)
-    
+
       #grid(
         columns: (28pt, 1fr, 28pt),
         align: (center + horizon, center + horizon, center + horizon),
-        box(width: 28pt, height: 28pt, align(center + horizon)[#image("logo_izq.png", fit: "contain")]),
-        
-    align(center + horizon)[
-      #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-      #v(-4.0pt)
-      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-      #v(-4.5pt)
-      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-    ]
-  ,
-        box(width: 28pt, height: 28pt, align(center + horizon)[#image("logo_der.png", fit: "contain")])
+        image("logo_izq.png", height: 28pt, fit: "contain"),
+        [
+          #text(size: 9.0pt, weight: "bold", fill: primary-dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
+          #v(-4.0pt)
+          #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+          #v(-4.5pt)
+          #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+        ],
+        image("logo_der.png", height: 28pt, fit: "contain")
       )
     
     #v(-1.5pt)
@@ -59,6 +57,55 @@
   fill: bg, inset: (x: 5.5pt, y: 4.0pt), radius: 3.0pt, stroke: 0.45pt + rgb("#d0d7de"), width: 100%, breakable: true,
   [#text(weight: "bold", fill: primary-color, size: 8.2pt)[#titulo] \ #v(0.3pt) #cuerpo]
 )
+
+#let caja-multimedia(tipo, btnTexto, url, archivo-qr) = {
+  let bg = rgb("#e2e8f0")
+  let border = rgb("#64748b")
+  let btn = rgb("#0f172a")
+  let txt = rgb("#1e293b")
+  let lbl = "🔗 Recurso Interactivo:"
+
+  if tipo == "youtube" {
+    bg = rgb("#fee2e2")
+    border = rgb("#dc2626")
+    btn = rgb("#b91c1c")
+    txt = rgb("#991b1b")
+    lbl = "▶ Video Interactivo (YouTube):"
+  } else if tipo == "spotify" {
+    bg = rgb("#dcfce7")
+    border = rgb("#16a34a")
+    btn = rgb("#15803d")
+    txt = rgb("#166534")
+    lbl = "🎧 Podcast / Audio (Spotify):"
+  } else if tipo == "drive" {
+    bg = rgb("#dbeafe")
+    border = rgb("#2563eb")
+    btn = rgb("#1d4ed8")
+    txt = rgb("#1e40af")
+    lbl = "📁 Archivo / Documento (Drive):"
+  }
+
+  block(
+    fill: bg, stroke: 0.85pt + border, radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
+    grid(
+      columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
+      [
+        #text(size: 6.9pt, weight: "bold", fill: txt)[#lbl] \
+        #v(2.0pt)
+        #link(url)[
+          #box(fill: btn, radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+            #text(fill: white, weight: "bold", size: 6.5pt)[#btnTexto]
+          ]
+        ]
+      ],
+      [
+        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + border)[
+          #image(archivo-qr, width: 36pt, fit: "contain")
+        ]
+      ]
+    )
+  )
+}
 
 #let box-evaluacion(titulo, url, qr, cuerpo) = block(
   fill: rgb("#f5f3ff"), stroke: 0.75pt + rgb("#8b5cf6"), radius: 3.5pt, inset: 5.0pt, width: 100%, breakable: true,
@@ -127,27 +174,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
       ]
     ]
     #v(3.5pt)
-    #block(
-      fill: rgb("#dbeafe"), stroke: 0.85pt + rgb("#2563eb"), radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
-      grid(
-        columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
-        [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e40af"))[📁 Archivo / Documento (Drive):] \
-          #v(2.0pt)
-          #link("https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing")[
-            #box(fill: rgb("#1d4ed8"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR EN DRIVE ↗]
-            ]
-          ]
-        ],
-        [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#2563eb"))[
-            #image("qr_act_1.png", width: 36pt, fit: "contain")
-          ]
-        ]
-      )
-    )
-      
+    #caja-multimedia("drive", "ABRIR EN DRIVE ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
   ]
   #v(2.5pt)
 
@@ -156,27 +183,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
     #v(3.5pt)
-    #block(
-      fill: rgb("#fee2e2"), stroke: 0.85pt + rgb("#dc2626"), radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
-      grid(
-        columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
-        [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#991b1b"))[▶ Video Interactivo (YouTube):] \
-          #v(2.0pt)
-          #link("https://www.youtube.com/watch?v=2f3rCpvBq30")[
-            #box(fill: rgb("#b91c1c"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[VER VIDEO EN YOUTUBE ↗]
-            ]
-          ]
-        ],
-        [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_2.png", width: 36pt, fit: "contain")
-          ]
-        ]
-      )
-    )
-      
+    #caja-multimedia("youtube", "VER VIDEO EN YOUTUBE ↗", "https://www.youtube.com/watch?v=2f3rCpvBq30", "qr_act_2.png")
   ]
   #v(2.5pt)
 
@@ -185,27 +192,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
     #v(3.5pt)
-    #block(
-      fill: rgb("#e2e8f0"), stroke: 0.85pt + rgb("#64748b"), radius: 3.5pt, inset: 4.5pt, width: 100%, breakable: false,
-      grid(
-        columns: (1fr, auto), align: (left + horizon, right + horizon), gutter: 6.0pt,
-        [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:] \
-          #v(2.0pt)
-          #link("https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp")[
-            #box(fill: rgb("#0f172a"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR RECURSO ↗]
-            ]
-          ]
-        ],
-        [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
-            #image("qr_act_3.png", width: 36pt, fit: "contain")
-          ]
-        ]
-      )
-    )
-      
+    #caja-multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
   ]
   #v(2.5pt)
 
@@ -222,7 +209,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSejGMcDmZ9No61j11zcaGf0hktt2kMJepwKnaIV0zkxyQCalw/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfLFG6IUG3F5NGgbKTWqaDcOnAotLnUdNWWKLVMwm8eYiODhA/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
