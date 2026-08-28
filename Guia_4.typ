@@ -81,12 +81,6 @@
     #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%)
-      ]
-    ]
   ]
   #v(2.5pt)
 
@@ -105,34 +99,12 @@
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
 
-    #v(3.5pt)
-    #block(
-      fill: rgb("#dbeafe"),
-      stroke: 0.85pt + rgb("#2563eb"),
-      radius: 3.5pt,
-      inset: 4.5pt,
-      width: 100%,
-      breakable: false,
-      grid(
-        columns: (1fr, auto),
-        align: (left + horizon, right + horizon),
-        gutter: 6.0pt,
-        [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e40af"))[📁 Archivo / Documento (Drive):]
-          #v(2.0pt)
-          #link("https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing")[
-            #box(fill: rgb("#1d4ed8"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR EN DRIVE ↗]
-            ]
-          ]
-        ],
-        [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#2563eb"))[
-            #image("qr_act_1.png", width: 36pt)
-          ]
-        ]
-      )
-    )
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_2.jpg", width: 92%)
+      ]
+    ]
   ]
   #v(2.5pt)
 
@@ -148,42 +120,6 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
-
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_3.png", width: 92%)
-      ]
-    ]
-
-    #v(3.5pt)
-    #block(
-      fill: rgb("#fee2e2"),
-      stroke: 0.85pt + rgb("#dc2626"),
-      radius: 3.5pt,
-      inset: 4.5pt,
-      width: 100%,
-      breakable: false,
-      grid(
-        columns: (1fr, auto),
-        align: (left + horizon, right + horizon),
-        gutter: 6.0pt,
-        [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#991b1b"))[▶ Video Interactivo (YouTube):]
-          #v(2.0pt)
-          #link("https://www.youtube.com/watch?v=2f3rCpvBq30")[
-            #box(fill: rgb("#b91c1c"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[VER VIDEO EN YOUTUBE ↗]
-            ]
-          ]
-        ],
-        [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_2.png", width: 36pt)
-          ]
-        ]
-      )
-    )
   ]
   #v(2.5pt)
 
@@ -244,6 +180,13 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(2.0pt)
     #emph[Misión de escucha:]Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_4.png", width: 92%)
+      ]
+    ]
+
     #v(3.5pt)
     #block(
       fill: rgb("#f5f3ff"),
@@ -294,7 +237,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSeIvCH2ybspMJQayNQhJl77PXZo2ZehcsACMwkOslY7kD1Gxw/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSeBFkXxKrATgkE7bGO89aUPvDPbOixFqBuQa0gYTQaAM4-4KA/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
