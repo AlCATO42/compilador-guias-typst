@@ -71,7 +71,7 @@
 
 
   #block(
-    fill: rgb("#fef7e0"),
+    fill: rgb("#fef9c3"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
     stroke: (left: 2.5pt + rgb("#d97706")),
@@ -81,6 +81,12 @@
     #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
+    #v(3.0pt)
+    #align(center)[
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_1.jpg", width: 92%)
+      ]
+    ]
   ]
   #v(2.5pt)
 
@@ -245,7 +251,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica]
     #v(2.0pt)
-    ITALIC 0   Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
+    #emph[Misión de escucha:]Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
 
     #v(3.0pt)
     #align(center)[
@@ -256,8 +262,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
     #v(3.5pt)
     #block(
-      fill: rgb("#e2e8f0"),
-      stroke: 0.85pt + rgb("#64748b"),
+      fill: rgb("#f5f3ff"),
+      stroke: 0.85pt + rgb("#8b5cf6"),
       radius: 3.5pt,
       inset: 4.5pt,
       width: 100%,
@@ -267,16 +273,16 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         align: (left + horizon, right + horizon),
         gutter: 6.0pt,
         [
-          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:]
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#5b21b6"))[🎨 Diseño Interactivo (Canva):]
           #v(2.0pt)
           #link("https://canva.link/pzsfexlfnjoqb8p")[
-            #box(fill: rgb("#0f172a"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR RECURSO ↗]
+            #box(fill: rgb("#7c3aed"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR EN CANVA ↗]
             ]
           ]
         ],
         [
-          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
             #image("qr_act_4.png", width: 36pt)
           ]
         ]
@@ -304,7 +310,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSegOhbT9wYYrGZfcN0kTUQiocdr9LqlGHAkPVJEy4TxU-UZqQ/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSfgwXW2IpzlIAXRT3QyMW4I9kUeOEDrA9p9BhtEdy8ZQxEBVw/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
