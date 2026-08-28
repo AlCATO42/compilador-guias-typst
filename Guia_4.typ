@@ -7,22 +7,6 @@
 #let accent_color = rgb("#d97706")
 #let eval_color = rgb("#6d28d9")
 
-#let bg_youtube = rgb("#fee2e2")
-#let border_youtube = rgb("#dc2626")
-#let btn_youtube = rgb("#b91c1c")
-
-#let bg_spotify = rgb("#dcfce7")
-#let border_spotify = rgb("#16a34a")
-#let btn_spotify = rgb("#15803d")
-
-#let bg_drive = rgb("#dbeafe")
-#let border_drive = rgb("#2563eb")
-#let btn_drive = rgb("#1d4ed8")
-
-#let bg_web = rgb("#e2e8f0")
-#let border_web = rgb("#64748b")
-#let btn_web = rgb("#0f172a")
-
 #let box_objetivo(cuerpo) = block(
   fill: rgb("#e8f0fe"),
   inset: (x: 5.5pt, y: 4.0pt),
@@ -65,42 +49,6 @@
   ]
 )
 
-#let caja_multimedia(tipo, btn_texto, url_str, archivo_qr) = {
-  let bg_box = if tipo == "youtube" { bg_youtube } else if tipo == "spotify" { bg_spotify } else if tipo == "drive" { bg_drive } else { bg_web }
-  let border_box = if tipo == "youtube" { border_youtube } else if tipo == "spotify" { border_spotify } else if tipo == "drive" { border_drive } else { border_web }
-  let btn_box = if tipo == "youtube" { btn_youtube } else if tipo == "spotify" { btn_spotify } else if tipo == "drive" { btn_drive } else { btn_web }
-  let txt_box = if tipo == "youtube" { rgb("#991b1b") } else if tipo == "spotify" { rgb("#166534") } else if tipo == "drive" { rgb("#1e40af") } else { rgb("#1e293b") }
-  let lbl_box = if tipo == "youtube" { "▶ Video Interactivo (YouTube):" } else if tipo == "spotify" { "🎧 Podcast / Audio (Spotify):" } else if tipo == "drive" { "📁 Archivo / Documento (Drive):" } else { "🔗 Recurso Interactivo:" }
-
-  block(
-    fill: bg_box,
-    stroke: 0.85pt + border_box,
-    radius: 3.5pt,
-    inset: 4.5pt,
-    width: 100%,
-    breakable: false,
-    grid(
-      columns: (1fr, auto),
-      align: (left + horizon, right + horizon),
-      gutter: 6.0pt,
-      [
-        #text(size: 6.9pt, weight: "bold", fill: txt_box)[#lbl_box] \
-        #v(2.0pt)
-        #link(url_str)[
-          #box(fill: btn_box, radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
-            #text(fill: white, weight: "bold", size: 6.5pt)[#btn_texto]
-          ]
-        ]
-      ],
-      [
-        #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + border_box)[
-          #image(archivo_qr, width: 36pt, fit: "contain")
-        ]
-      ]
-    )
-  )
-}
-
 #let box_evaluacion(titulo, url_str, qr_file, cuerpo) = block(
   fill: rgb("#f5f3ff"),
   stroke: 0.75pt + rgb("#8b5cf6"),
@@ -126,7 +74,7 @@
       ],
       [
         #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#8b5cf6"))[
-          #image(qr_file, width: 40pt, fit: "contain")
+          #image(qr_file, width: 40pt)
         ]
       ]
     )
@@ -143,21 +91,13 @@
   header: context [
     #v(3.5pt)
 
-      #grid(
-        columns: (28pt, 1fr, 28pt),
-        align: (center + horizon, center + horizon, center + horizon),
-        [#image("logo_izq.png", height: 28pt, fit: "contain")],
-        
-    [
-      #text(size: 9.0pt, weight: "bold", fill: primary_dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
-      #v(-4.0pt)
-      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-      #v(-4.5pt)
-      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-    ]
-  ,
-        [#image("logo_der.png", height: 28pt, fit: "contain")]
-      )
+      #align(center + horizon)[
+        #text(size: 9.0pt, weight: "bold", fill: primary_dark)[COLEGIO NUEVO CHILE (I. E. D.)] \
+        #v(-4.0pt)
+        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
+        #v(-4.5pt)
+        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+      ]
     
     #v(-1.5pt)
     #line(length: 100%, stroke: 0.9pt + primary_color)
@@ -167,7 +107,7 @@
     #v(-2pt)
     #grid(
       columns: (1fr, auto),
-      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · clasecienciasociales\@gmail.com]],
+      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · #text("clasecienciasociales@gmail.com")]],
       [#text(size: 7.0pt, fill: primary_color, weight: "bold")[Pág. #counter(page).display() / #counter(page).final().first()]]
     )
   ]
@@ -181,7 +121,7 @@
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 1.5pt))[
   #text(size: 7.0pt)[
-    *Área:* Ciencias Sociales #h(1fr) *Docente:* Hernando Alexis Casallas-Torres #h(1fr) *Contacto:* clasecienciasociales\@gmail.com
+    *Área:* Ciencias Sociales #h(1fr) *Docente:* Hernando Alexis Casallas-Torres #h(1fr) *Contacto:* #text("clasecienciasociales@gmail.com")
   ]
 ]
 
@@ -209,12 +149,38 @@
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
     #v(3pt)
     #align(center)[
-      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 92%, fit: "contain")
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_1.jpg", width: 92%)
       ]
     ]
     #v(3.5pt)
-    #caja_multimedia("drive", "ABRIR EN DRIVE ↗", "https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing", "qr_act_1.png")
+    #block(
+      fill: rgb("#dbeafe"),
+      stroke: 0.85pt + rgb("#2563eb"),
+      radius: 3.5pt,
+      inset: 4.5pt,
+      width: 100%,
+      breakable: false,
+      grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        gutter: 6.0pt,
+        [
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e40af"))[📁 Archivo / Documento (Drive):] \
+          #v(2.0pt)
+          #link("https://drive.google.com/file/d/1KZFz_XHwuTxmFdGe5zuOvouBJPTWkP90/view?usp=sharing")[
+            #box(fill: rgb("#1d4ed8"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR EN DRIVE ↗]
+            ]
+          ]
+        ],
+        [
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#2563eb"))[
+            #image("qr_act_1.png", width: 36pt)
+          ]
+        ]
+      )
+    )
   ]
   #v(2.5pt)
 
@@ -223,7 +189,33 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
     #v(3.5pt)
-    #caja_multimedia("youtube", "VER VIDEO EN YOUTUBE ↗", "https://www.youtube.com/watch?v=2f3rCpvBq30", "qr_act_2.png")
+    #block(
+      fill: rgb("#fee2e2"),
+      stroke: 0.85pt + rgb("#dc2626"),
+      radius: 3.5pt,
+      inset: 4.5pt,
+      width: 100%,
+      breakable: false,
+      grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        gutter: 6.0pt,
+        [
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#991b1b"))[▶ Video Interactivo (YouTube):] \
+          #v(2.0pt)
+          #link("https://www.youtube.com/watch?v=2f3rCpvBq30")[
+            #box(fill: rgb("#b91c1c"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[VER VIDEO EN YOUTUBE ↗]
+            ]
+          ]
+        ],
+        [
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
+            #image("qr_act_2.png", width: 36pt)
+          ]
+        ]
+      )
+    )
   ]
   #v(2.5pt)
 
@@ -232,7 +224,33 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
     #v(3.5pt)
-    #caja_multimedia("web", "ABRIR RECURSO ↗", "https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp", "qr_act_3.png")
+    #block(
+      fill: rgb("#e2e8f0"),
+      stroke: 0.85pt + rgb("#64748b"),
+      radius: 3.5pt,
+      inset: 4.5pt,
+      width: 100%,
+      breakable: false,
+      grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        gutter: 6.0pt,
+        [
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:] \
+          #v(2.0pt)
+          #link("https://wwv.yadvashem.org/yv/es/exhibitions/auschwitz-album/multimedia.asp")[
+            #box(fill: rgb("#0f172a"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR RECURSO ↗]
+            ]
+          ]
+        ],
+        [
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
+            #image("qr_act_3.png", width: 36pt)
+          ]
+        ]
+      )
+    )
   ]
   #v(2.5pt)
 
@@ -240,8 +258,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     *Misión de escucha:* Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
     #v(3pt)
     #align(center)[
-      #block(width: 100%, stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.jpg", width: 92%, fit: "contain")
+      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+        #image("img_act_2.jpg", width: 92%)
       ]
     ]
   ]
@@ -249,7 +267,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfkADIZWECPTtwgeH9TTQYXIaL0E0lPtKfsmIk3RsOd2ViAzg/viewform", "qr_evaluacion.png", [
+  #box_evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSeFRiKPMf2Mv29dxHAm1h536u7mmKwbWTSZNIn5hbeMMt20Ag/viewform", "qr_evaluacion.png", [
     #par(justify: false)[
 *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
 #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
