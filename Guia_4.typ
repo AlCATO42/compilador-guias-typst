@@ -308,7 +308,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSdR974aELIRpIpmC6-5vP9r8ogXB8Ds7ZG8T9i0sXpaj-6duQ/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSdMlZz_FY3KCJgi1R9Two05grD0gbdo7i5Gbt4M8HvGWDUAvw/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
