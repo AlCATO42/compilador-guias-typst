@@ -7,8 +7,8 @@
   margin: (x: 8.5mm, top: 26mm, bottom: 8.5mm),
   header: context [
     #v(3.5pt)
-    #let tiene_izq = false
-    #let tiene_der = false
+    #let tiene_izq = true
+    #let tiene_der = true
     #let box_logo(img_name) = box(
       width: 30pt, 
       height: 30pt, 
@@ -251,7 +251,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
 
 
 
-  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSfivyUhdYiEgl6melTvR3pCVCCZQwgyuUJWDQhvlagcMneGHw/viewform", "qr_evaluacion.png", [
+  #box-evaluacion("EVALUACIÓN FORMATIVA", "https://docs.google.com/forms/d/e/1FAIpQLSdO50csqoRvS2gud8Vz6f_Zju63dldlqf_PlV424WdA145HpA/viewform", "qr_evaluacion.png", [
     
     #v(2.5pt) *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \ 
     #h(6pt) a) La estabilidad económica de la República de Weimar. \ 
