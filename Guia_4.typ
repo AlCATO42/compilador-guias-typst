@@ -8,31 +8,21 @@
   header: context [
     #v(3.5pt)
 
-      #grid(
-        columns: (28pt, 1fr, 28pt),
-        align: (center + horizon, center + horizon, center + horizon),
-        box(width: 28pt, height: 28pt, align(center + horizon)[#image("logo_izq.png", fit: "contain")]),
-        
-    align(center + horizon)[
+    #align(center + horizon)[
       #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
-      #v(-4.0pt)
       #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
-      #v(-4.5pt)
       #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
     ]
-  ,
-        box(width: 28pt, height: 28pt, align(center + horizon)[#image("logo_der.png", fit: "contain")])
-      )
     
-    #v(-1.5pt)
+    #v(2.0pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
   ],
   footer: context [
     #line(length: 100%, stroke: 0.35pt + rgb("#dcdcdc"))
-    #v(-2pt)
+    #v(2pt)
     #grid(
       columns: (1fr, auto),
-      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · clasecienciasociales\u{40}gmail.com]],
+      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · #text("clasecienciasociales@gmail.com")]],
       [#text(size: 7.0pt, fill: rgb("#1a73e8"), weight: "bold")[Pág. #counter(page).display() / #counter(page).final().first()]]
     )
   ]
@@ -42,15 +32,15 @@
 #set par(justify: true, leading: 0.35em)
 
 #align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 4. LA SEGUNDA GUERRA MUNDIAL: EL SUICIDIO DE LA RAZÓN]]
-#v(0.3pt)
+#v(1pt)
 
-#rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 1.5pt))[
+#rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 2.0pt))[
   #text(size: 7.0pt)[
-    *Área:* Ciencias Sociales #h(1fr) *Docente:* Hernando Alexis Casallas-Torres #h(1fr) *Contacto:* clasecienciasociales\u{40}gmail.com
+    *Área:* Ciencias Sociales #h(1fr) *Docente:* Hernando Alexis Casallas-Torres #h(1fr) *Contacto:* #text("clasecienciasociales@gmail.com")
   ]
 ]
 
-#v(0.6pt)
+#v(2pt)
 
 #columns(2, gutter: 7.0pt)[
 
@@ -63,7 +53,6 @@
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje] \
-    #v(0.3pt)
     Comprender las causas, el desarrollo y las consecuencias de la Segunda Guerra Mundial, analizando el impacto de la tecnología, las ideologías extremas y la violación de los derechos humanos en la sociedad global del siglo XX.
   ]
 
@@ -79,7 +68,6 @@
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?] \
-    #v(0.3pt)
     En la historia, la tecnología y la eficiencia industrial casi siempre se han usado para mejorar la vida de las personas. Sin embargo, durante la Segunda Guerra Mundial, el régimen nazi aplicó la misma lógica y eficiencia que se usaba para fabricar automóviles (con horarios, planos, ingenieros y cálculos de costos) para diseñar un sistema industrializado de exterminio humano. Campos como Auschwitz-Birkenau llegaron a asesinar a 8,000 personas en un solo día en cámaras de gas. ¿Qué sucede cuando la razón y la tecnología pierden toda ética y se usan para destruir en masa?
   ]
   #v(2.5pt)
@@ -95,16 +83,17 @@
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. El Mundo en Llamas: El Estallido de la Guerra Total] \
-    #v(0.3pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
+
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
         #image("img_act_1.jpg", width: 92%)
       ]
     ]
+
     #v(3.5pt)
     #block(
       fill: rgb("#dbeafe"),
@@ -145,10 +134,10 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Estallido de la Guerra Total] \
-    #v(0.3pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
+
     #v(3.5pt)
     #block(
       fill: rgb("#fee2e2"),
@@ -189,10 +178,10 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El Estallido de la Guerra Total (prueba)] \
-    #v(0.3pt)
     Copia en tu cuaderno este texto introductorio:
 
 Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso campo de batalla. Así fue la Segunda Guerra Mundial (1939-1945), un conflicto que arrastró a la humanidad a su hora más oscura. No fue un simple choque de ejércitos en el frente; fue una 'guerra total' que borró la línea entre civiles y militares. Las potencias del Eje (Alemania, Italia y Japón) se enfrentaron a los Aliados (Gran Bretaña, Estados Unidos y la Unión Soviética) en una contienda que dejó ciudades hechas cenizas, millones de refugiados y que inauguró el terror de la era atómica.
+
     #v(3.5pt)
     #block(
       fill: rgb("#e2e8f0"),
@@ -233,8 +222,8 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     breakable: true
   )[
     #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Engaño Perfecto: El Síndrome K y la Resistencia Médica] \
-    #v(0.3pt)
     Misión de escucha: Ponte los audífonos, haz clic en el botón de Spotify y escucha con atención este episodio de podcast sobre cómo la medicina se convirtió en un arma de salvación en medio de la guerra.
+
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
@@ -263,7 +252,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:] \
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSc4zB-8wVrUZYhW8uiz8wjkT054X3JQUyA1CkGhrQDh6ZCnPw/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSczZBLy6UHHHxPbOIcxerUfElCUCEU6JDNMC0kDu8QUzAgsDg/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
@@ -278,31 +267,19 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
     #v(3.0pt)
     #line(length: 100%, stroke: 0.4pt + rgb("#c4b5fd"))
     #v(2.0pt)
-    #par(justify: false)[
 
-    #v(3.0pt)
-    #strong[¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?]
-
-    #h(6pt) a) La estabilidad económica de la República de Weimar.
-
-    #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles.
-
-    #h(6pt) c) La alianza pacífica con la Unión Soviética.
-
+    *¿Cuál de las siguientes condiciones facilitó el ascenso de los regímenes totalitarios?* \
+    #h(6pt) a) La estabilidad económica de la República de Weimar. \
+    #h(6pt) b) La crisis de 1929 y el resentimiento por el Tratado de Versalles. \
+    #h(6pt) c) La alianza pacífica con la Unión Soviética. \
     #h(6pt) d) La eliminación voluntaria del ejército alemán.
 
-
     #v(3.0pt)
-    #strong[¿Qué caracterizó la propaganda en los regímenes totalitarios?]
-
-    #h(6pt) a) El debate abierto en medios de comunicación independientes.
-
-    #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder.
-
-    #h(6pt) c) La libre circulación de prensa extranjera.
-
+    *¿Qué caracterizó la propaganda en los regímenes totalitarios?* \
+    #h(6pt) a) El debate abierto en medios de comunicación independientes. \
+    #h(6pt) b) El control absoluto de la prensa y el culto fanático al líder. \
+    #h(6pt) c) La libre circulación de prensa extranjera. \
     #h(6pt) d) La prohibición de mítines y discursos públicos.
-]
   ]
   #v(2.5pt)
 
