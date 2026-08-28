@@ -8,13 +8,21 @@
   header: context [
     #v(3.5pt)
 
-    #align(center + horizon)[
-      #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)]
-      #v(2.0pt)
-      #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)]
-      #v(2.0pt)
-      #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
-    ]
+    #grid(
+      columns: (28pt, 1fr, 28pt),
+      align: (center + horizon, center + horizon, center + horizon),
+      image("logo_izq.png", height: 28pt, fit: "contain"),
+
+      [
+        #text(size: 9.0pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)]
+        #v(2.0pt)
+        #text(size: 5.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)]
+        #v(2.0pt)
+        #text(size: 5.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
+      ]
+  ,
+      image("logo_der.png", height: 28pt, fit: "contain")
+    )
     
     #v(2.0pt)
     #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
@@ -245,6 +253,35 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #image("img_act_3.png", width: 92%)
       ]
     ]
+
+    #v(3.5pt)
+    #block(
+      fill: rgb("#e2e8f0"),
+      stroke: 0.85pt + rgb("#64748b"),
+      radius: 3.5pt,
+      inset: 4.5pt,
+      width: 100%,
+      breakable: false,
+      grid(
+        columns: (1fr, auto),
+        align: (left + horizon, right + horizon),
+        gutter: 6.0pt,
+        [
+          #text(size: 6.9pt, weight: "bold", fill: rgb("#1e293b"))[🔗 Recurso Interactivo:]
+          #v(2.0pt)
+          #link("https://canva.link/pzsfexlfnjoqb8p")[
+            #box(fill: rgb("#0f172a"), radius: 2.2pt, inset: (x: 6.5pt, y: 3.2pt))[
+              #text(fill: white, weight: "bold", size: 6.5pt)[ABRIR RECURSO ↗]
+            ]
+          ]
+        ],
+        [
+          #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
+            #image("qr_act_4.png", width: 36pt)
+          ]
+        ]
+      )
+    )
   ]
   #v(2.5pt)
 
@@ -267,7 +304,7 @@ Imagina que tu ciudad, tu país y el planeta entero se convierten en un inmenso 
         #v(1.0pt)
         #text(size: 6.6pt)[Responde en el cuaderno o accede digitalmente con el botón/QR:]
         #v(2.5pt)
-        #link("https://docs.google.com/forms/d/e/1FAIpQLSf8x4-YPeewlSFIqnmCryYlv43SYgJOOsy5G1c-JUV17G3fCg/viewform")[
+        #link("https://docs.google.com/forms/d/e/1FAIpQLSdQ0PneiKi9edAykxdzXYNSYzIElvDA_mwrxJBeYHN8x_eC4A/viewform")[
           #box(fill: rgb("#6d28d9"), radius: 2.0pt, inset: (x: 6.0pt, y: 3.0pt))[
             #text(fill: white, weight: "bold", size: 6.6pt)[RESPONDER EVALUACIÓN DIGITAL ↗]
           ]
