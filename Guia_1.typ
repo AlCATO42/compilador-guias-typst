@@ -135,10 +135,10 @@ Responde: ¿Qué consecuencias tiene para la vida diaria de una población cuand
 
 
   #block(
-    fill: rgb("#dcfce7"),
+    fill: rgb("#ffffff"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
-    stroke: 0.45pt + rgb("#a9c9b4"),
+    stroke: 0.45pt + rgb("#d0d7de"),
     width: 100%,
     breakable: true
   )[
