@@ -1,5 +1,5 @@
 // =============================================================================
-// GUÍA PEDAGÓGICA TRANSMEDIA - COLEGIO CASTILLA (I. E. D.)
+// GUÍA PEDAGÓGICA TRANSMEDIA - COLEGIO NUEVO CHILE (I. E. D.)
 // =============================================================================
 
 #set page(
@@ -15,11 +15,11 @@
 
       align(center + horizon)[
         #par(leading: 0.22em)[
-          #text(size: 10.5pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO CASTILLA (I. E. D.)] \
+          #text(size: 10.5pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO NUEVO CHILE (I. E. D.)] \
           #v(-1.5pt)
-          #text(size: 6.8pt, fill: rgb("#444444"))[cednvacastilla8@redp.edu.co] \
+          #text(size: 6.8pt, fill: rgb("#444444"))[Resolución No. 4653 del 21 de noviembre de 2007 (Grados 0° a 11°)] \
           #v(-2.0pt)
-          #text(size: 6.8pt, weight: "bold", fill: rgb("#444444"))[]
+          #text(size: 6.8pt, weight: "bold", fill: rgb("#444444"))[DANE 111001013676 - NIT FSE 830.035.405-1]
         ]
       ]
   ,
@@ -34,21 +34,21 @@
     #v(2.0pt)
     #grid(
       columns: (1fr, auto),
-      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Gloria María Bermúdez · #text("clasecienciasociales@gmail.com")]],
+      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Hernando Alexis Casallas-Torres · #text("clasecienciasociales@gmail.com")]],
       [#text(size: 7.0pt, fill: rgb("#1a73e8"), weight: "bold")[Pág. #counter(page).display() / #counter(page).final().first()]]
     )
   ]
 )
 
-#set text(font: ("Roboto Serif", "Liberation Sans", "DejaVu Sans", "Arial"), size: 10.0pt, fill: rgb("#2c3e50"), lang: "es")
-#set par(justify: true, leading: 0.50em)
+#set text(font: ("Liberation Sans", "DejaVu Sans", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
+#set par(justify: true, leading: 0.35em)
 
-#align(center)[#text(size: 14pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 1. LAS DIVISIONES, GUERRAS Y CRUZADAS RELIGIOSAS]]
+#align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 1. LAS DIVISIONES, GUERRAS Y CRUZADAS RELIGIOSAS]]
 #v(1.0pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 2.0pt))[
   #text(size: 7.0pt)[
-    *Área:* Ciencias Sociales #h(1fr) *Docente:* Gloria María Bermúdez #h(1fr) *Contacto:* #text("clasecienciasociales@gmail.com")
+    *Área:* Ciencias Sociales #h(1fr) *Docente:* Hernando Alexis Casallas-Torres #h(1fr) *Contacto:* #text("clasecienciasociales@gmail.com")
   ]
 ]
 
@@ -64,7 +64,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#0d47a1"), size: 11.5pt)[🎯 Objetivo de Aprendizaje]
+    #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje]
     #v(2.0pt)
     Comprender las causas, el desarrollo y las consecuencias de la consolidación de las principales religiones monoteístas durante los siglos V al XV, analizando la relación del judaísmo, cristianismos e islamismo con el poder, la guerra y la cultura.
   ]
@@ -80,7 +80,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#92400e"), size: 11.5pt)[💡 ¿Sabías que...?]
+    #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     Lo que se conoce como Oriente y Occidente corresponde a dos conceptos arbitrarios surgidos en Europa que dividen al mundo en dos grandes áreas culturales. Al Oriente se asocia a Asia, el norte de África y partes de Europa oriental, y abarca una diversidad de culturas, lenguas y religiones como el islamismo, el hinduismo, el budismo y el cristianismo ortodoxo. A Occidente se asocia a Europa, América y gran parte de Oceanía; abarca países cuyas culturas, lenguas y religiones están influenciadas en su mayoría, aunque no únicamente por el cristianismo católico y protestante (Gayubas, 2017).
   ]
@@ -96,7 +96,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[1. Civilización bizantina]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. Civilización bizantina]
     #v(2.0pt)
     #emph[Resalta con resaltador amarillo las ideas principales, verde los conceptos y rosado las palabras desconocidas.]
 El Imperio bizantino o Imperio romano de Oriente configuró un modelo sociopolítico, espiritual y cultural que desafió la narrativa tradicional sobre la Edad Media, habitualmente centrada en Europa occidental. La consolidación de Bizancio definió los contornos geopolíticos entre Oriente y Occidente mediante dinámicas de soberanía, espiritualidad y jerarquías sociales.
@@ -120,7 +120,7 @@ El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones origi
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 100%)
+        #image("img_act_1.jpg", width: 92%)
       ]
     ]
 
@@ -147,7 +147,7 @@ El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones origi
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#2563eb"))[
-            #image("qr_act_1.png", width: 60pt)
+            #image("qr_act_1.png", width: 36pt)
           ]
         ]
       )
@@ -163,7 +163,7 @@ El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones origi
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[2. El Islam]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Islam]
     #v(2.0pt)
     #emph[Copia en tu cuaderno este texto introductorio:]
 Surgió en el siglo VII en la península arábiga a través de las prédicas de Mahoma, quien se consideraba el último profeta de Alá después de Abraham, Moisés y Jesús. La Hégira (622 d. C.): Tras ser rechazado en La Meca debido al culto politeísta de la ciudad, Mahoma emigró a Medina. Este acontecimiento marca el inicio del calendario islámico. En Medina aumentó su liderazgo y convirtió a la mayoría de la población. En el año 630 conquistó La Meca, eliminó la religión politeísta y estableció un Estado musulmán. Mahoma falleció dos años después, en el 632. (Kiss, 2023)
@@ -197,7 +197,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_2.png", width: 60pt)
+            #image("qr_act_2.png", width: 36pt)
           ]
         ]
       )
@@ -213,7 +213,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[3. El judaísmo]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El judaísmo]
     #v(2.0pt)
     El judaísmo es la religión monoteísta abrahámica más antigua. Su historia temprana está en el Tanaj (Antiguo Testamento), el cual contiene principalmente mitos fundacionales religiosos más que hechos históricos probados. Su narrativa inicia con el pacto entre Dios y Abraham, el éxodo desde Egipto hacia Canaán y la división del territorio entre doce tribus.
 
@@ -244,7 +244,7 @@ Recuperaron brevemente la independencia con la revuelta de Judas Macabeo (167 a.
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_3.png", width: 60pt)
+            #image("qr_act_3.png", width: 36pt)
           ]
         ]
       )
@@ -260,7 +260,7 @@ Recuperaron brevemente la independencia con la revuelta de Judas Macabeo (167 a.
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[4. El Cristianismo]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Cristianismo]
     #v(2.0pt)
     El nombre del cristianismo proviene del griego christianós, derivado de Christós, la traducción del vocablo hebreo mesías, que a su vez significa “ungido”. Así, el nombre de esta religión se mantendría a lo largo de los siglos. El texto sacro fundamental del cristianismo es la Biblia; se divide en Antiguo y Nuevo Testamento.
 
@@ -278,7 +278,7 @@ Sin embargo, tras la división política del mundo romano y el distanciamiento c
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[5. Las cruzadas]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[5. Las cruzadas]
     #v(2.0pt)
     Las cruzadas fueron una serie de guerras y expediciones religiosas que ocurrieron durante la Edad Media, entre los años 1096 y 1291. En ellas, miles de caballeros, reyes y campesinos de Europa occidental viajaron hacia Oriente Medio con la meta principal de recuperar el control de Tierra Santa (Jerusalén y sus alrededores), un lugar sagrado para el cristianismo que en ese momento estaba bajo el dominio de gobernantes musulmanes.
 #emph[¿Por qué comenzaron?:]
@@ -309,7 +309,7 @@ Se reconocen oficialmente ocho grandes Cruzadas:
     #v(3.0pt)
     #align(center)[
       #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.png", width: 100%)
+        #image("img_act_2.png", width: 92%)
       ]
     ]
 
@@ -336,7 +336,7 @@ Se reconocen oficialmente ocho grandes Cruzadas:
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_5.png", width: 60pt)
+            #image("qr_act_5.png", width: 36pt)
           ]
         ]
       )
@@ -352,7 +352,7 @@ Se reconocen oficialmente ocho grandes Cruzadas:
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#1a73e8"), size: 11.5pt)[6. Referencias]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[6. Referencias]
     #v(2.0pt)
     Gayubas, A. (2017). Oriente y occidente. Enciclopedia de Humanidades. Disponible en:
 
@@ -387,7 +387,7 @@ https://humanidades.com/cruzadas/
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#64748b"))[
-            #image("qr_act_6.png", width: 60pt)
+            #image("qr_act_6.png", width: 36pt)
           ]
         ]
       )
