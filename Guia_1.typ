@@ -15,7 +15,7 @@
 
       align(center + horizon)[
         #par(leading: 0.22em)[
-          #text(size: 10.5pt, weight: "bold", fill: rgb("8A1B04"))[COLEGIO CASTILLA (I. E. D.)] \
+          #text(size: 10.5pt, weight: "bold", fill: rgb("#0d47a1"))[COLEGIO CASTILLA (I. E. D.)] \
           #v(-1.5pt)
           #text(size: 6.8pt, style: "italic", fill: rgb("#444444"))[PREPARANDO LÍDERES, GENERANDO CAMBIOS.] \
           #v(-2.0pt)
@@ -27,28 +27,28 @@
     )
     
     #v(2.5pt)
-    #line(length: 100%, stroke: 0.9pt + rgb("B3280C"))
+    #line(length: 100%, stroke: 0.9pt + rgb("#1a73e8"))
   ],
   footer: context [
     #line(length: 100%, stroke: 0.35pt + rgb("#dcdcdc"))
     #v(2.0pt)
     #grid(
       columns: (1fr, auto),
-      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Gloria María Bermúdez Barrera · #text("clasesocialesypoliticas@gmail.com")]],
-      [#text(size: 7.0pt, fill: rgb("B3280C"), weight: "bold")[Pág. #counter(page).display() / #counter(page).final().first()]]
+      [#text(size: 7.0pt, fill: rgb("#666666"))[Docente: Gloria Maria Bermúdez Barrera · #text("clasesocialesypoliticas@gmail.com")]],
+      [#text(size: 7.0pt, fill: rgb("#1a73e8"), weight: "bold")[Pág. #counter(page).display() / #counter(page).final().first()]]
     )
   ]
 )
 
-#set text(font: ("Georgia","Roboto", "Liberation Sans", "DejaVu Sans", "Arial"), size: 9.0pt, fill: rgb("#2c3e50"), lang: "es")
+#set text(font: ("Liberation Sans", "DejaVu Sans", "Arial"), size: 7.6pt, fill: rgb("#2c3e50"), lang: "es")
 #set par(justify: true, leading: 0.35em)
 
-#align(center)[#text(size: 13.0pt, weight: "bold", fill: rgb("8A1B04"))[GUÍA: 1. LAS DIVISIONES, GUERRAS Y CRUZADAS RELIGIOSAS]]
+#align(center)[#text(size: 9.8pt, weight: "bold", fill: rgb("#0d47a1"))[GUÍA: 1. LAS DIVISIONES, GUERRAS Y CRUZADAS RELIGIOSAS]]
 #v(1.0pt)
 
 #rect(width: 100%, fill: rgb("#f8f9fa"), stroke: 0.35pt + rgb("#e0e0e0"), radius: 2.0pt, inset: (x: 4.0pt, y: 2.0pt))[
   #text(size: 7.0pt)[
-    *Área:* Ciencias Sociales #h(1fr) *Docente:* Gloria María Bermúdez Barrera #h(1fr) *Contacto:* #text("clasesocialesypoliticas@gmail.com")
+    *Área:* Ciencias Sociales #h(1fr) *Docente:* Gloria Maria Bermúdez Barrera #h(1fr) *Contacto:* #text("clasesocialesypoliticas@gmail.com")
   ]
 ]
 
@@ -60,11 +60,11 @@
     fill: rgb("#e8f0fe"),
     inset: (x: 5.5pt, y: 4.0pt),
     radius: 3.0pt,
-    stroke: (left: 2.5pt + rgb("B3280C")),
+    stroke: (left: 2.5pt + rgb("#1a73e8")),
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("8A1B04"), size: 11.0pt)[🎯 Objetivo de Aprendizaje]
+    #text(weight: "bold", fill: rgb("#0d47a1"), size: 8.2pt)[🎯 Objetivo de Aprendizaje]
     #v(2.0pt)
     Comprender las causas, el desarrollo y las consecuencias de la consolidación de las principales religiones monoteístas durante los siglos V al XV, analizando la relación del judaísmo, cristianismos e islamismo con el poder, la guerra y la cultura.
   ]
@@ -80,7 +80,7 @@
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("#92400e"), size: 11.0pt)[💡 ¿Sabías que...?]
+    #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     Lo que se conoce como Oriente y Occidente corresponde a dos conceptos arbitrarios surgidos en Europa que dividen al mundo en dos grandes áreas culturales. Al Oriente se asocia a Asia, el norte de África y partes de Europa oriental, y abarca una diversidad de culturas, lenguas y religiones como el islamismo, el hinduismo, el budismo y el cristianismo ortodoxo. A Occidente se asocia a Europa, América y gran parte de Oceanía; abarca países cuyas culturas, lenguas y religiones están influenciadas en su mayoría, aunque no únicamente por el cristianismo católico y protestante (Gayubas, 2017).
 
@@ -134,7 +134,7 @@ Responde: ¿Qué consecuencias tiene para la vida diaria de una población cuand
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[1. Civilización bizantina]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[1. Civilización bizantina]
     #v(2.0pt)
     #strong[Resalta con resaltador amarillo las ideas principales, verde los conceptos y rosado las palabras desconocidas.]
 
@@ -161,6 +161,16 @@ El cristianismo ortodoxo es una de las principales ramas del cristianismo, cuya 
 A diferencia de la Iglesia católica de Occidente, organizada bajo la autoridad centralizada y única del Papa en Roma, la Iglesia ortodoxa se estructuró como una comunión de iglesias autónomas dirigidas por sus propios obispos y patriarcas, donde el Patriarca de Constantinopla poseía un liderazgo de honor (primus inter pares o primero entre iguales), pero sin detentar un poder absoluto sobre las demás sedes (Meyendorff, 1989).
 
 El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones originales (Meyendorff, 1989). Otorga una gran relevancia a la liturgia, el misticismo y la veneración de iconos (pinturas sagradas), entendidos como ventanas espirituales hacia lo divino (Kiss, 2018).
+
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_1.png", width: 92%)
+  ]
+]
+#v(2.0pt)
+
+
   ]
   #v(2.5pt)
 
@@ -172,7 +182,7 @@ El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones origi
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[2. El Islam]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[2. El Islam]
     #v(2.0pt)
     Surgió en el siglo VII en la península arábiga a través de las prédicas de Mahoma, quien se consideraba el último profeta de Alá después de Abraham, Moisés y Jesús. La Hégira (622 d. C.): Tras ser rechazado en La Meca debido al culto politeísta de la ciudad, Mahoma emigró a Medina. Este acontecimiento marca el inicio del calendario islámico. En Medina aumentó su liderazgo y convirtió a la mayoría de la población. En el año 630 conquistó La Meca, eliminó la religión politeísta y estableció un Estado musulmán. Mahoma falleció dos años después, en el 632. (Kiss, 2023)
 
@@ -185,7 +195,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_1.jpg", width: 100%)
+    #image("img_act_2.jpg", width: 92%)
   ]
 ]
 #v(2.0pt)
@@ -215,7 +225,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_2.png", width: 46pt)
+            #image("qr_act_2.png", width: 36pt)
           ]
         ]
       )
@@ -231,7 +241,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[3. El judaísmo]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[3. El judaísmo]
     #v(2.0pt)
     El judaísmo es la religión monoteísta abrahámica más antigua. Su historia temprana está en el Tanaj (Antiguo Testamento), el cual contiene principalmente mitos fundacionales religiosos más que hechos históricos probados. Su narrativa inicia con el pacto entre Dios y Abraham, el éxodo desde Egipto hacia Canaán y la división del territorio entre doce tribus.
 
@@ -262,7 +272,7 @@ Recuperaron brevemente la independencia con la revuelta de Judas Macabeo (167 a.
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_3.png", width: 46pt)
+            #image("qr_act_3.png", width: 36pt)
           ]
         ]
       )
@@ -278,7 +288,7 @@ Recuperaron brevemente la independencia con la revuelta de Judas Macabeo (167 a.
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[4. El Cristianismo]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[4. El Cristianismo]
     #v(2.0pt)
     El nombre del cristianismo proviene del griego christianós, derivado de Christós, la traducción del vocablo hebreo mesías, que a su vez significa “ungido”. Así, el nombre de esta religión se mantendría a lo largo de los siglos. El texto sacro fundamental del cristianismo es la Biblia; se divide en Antiguo y Nuevo Testamento.
 
@@ -296,14 +306,14 @@ Sin embargo, tras la división política del mundo romano y el distanciamiento c
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[5. Las cruzadas]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[5. Las cruzadas]
     #v(2.0pt)
     Las cruzadas fueron una serie de guerras y expediciones religiosas que ocurrieron durante la Edad Media, entre los años 1096 y 1291. En ellas, miles de caballeros, reyes y campesinos de Europa occidental viajaron hacia Oriente Medio con la meta principal de recuperar el control de Tierra Santa (Jerusalén y sus alrededores), un lugar sagrado para el cristianismo que en ese momento estaba bajo el dominio de gobernantes musulmanes.
 
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_2.png", width: 100%)
+    #image("img_act_3.png", width: 92%)
   ]
 ]
 #v(2.0pt)
@@ -361,7 +371,7 @@ Se reconocen oficialmente ocho grandes Cruzadas:
         ],
         [
           #box(fill: white, inset: 1.5pt, radius: 2.0pt, stroke: 0.45pt + rgb("#dc2626"))[
-            #image("qr_act_5.png", width: 46pt)
+            #image("qr_act_5.png", width: 36pt)
           ]
         ]
       )
@@ -377,7 +387,29 @@ Se reconocen oficialmente ocho grandes Cruzadas:
     width: 100%,
     breakable: true
   )[
-    #text(weight: "bold", fill: rgb("B3280C"), size: 11.0pt)[6. Referencias]
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[6. Evaluación y retroalimentación]
+    #v(2.0pt)
+    - Lee detenidamente la sección 1. Civilización bizantina y 2. El islam. Luego, divide una hoja en tres columnas con los siguientes encabezados:
+
+¿Quiénes tomaban las decisiones oficiales?
+
+¿Quiénes ejercían influencia desde otros espacios (arte, monasterios, conocimiento, comercio)?
+
+¿Qué grupos o personas casi no son mencionados en el texto?
+
+Completa la tabla registrando a los actores presentes en la lectura (emperadores, emperatrices como Teodora, escritoras como Ana Comneno, eunucos, comerciantes, misticismo sufí, entre otros).
+  ]
+  #v(2.5pt)
+
+  #block(
+    fill: rgb("#ffffff"),
+    inset: (x: 5.5pt, y: 4.0pt),
+    radius: 3.0pt,
+    stroke: 0.45pt + rgb("#d0d7de"),
+    width: 100%,
+    breakable: true
+  )[
+    #text(weight: "bold", fill: rgb("#1a73e8"), size: 8.2pt)[7. Referencias]
     #v(2.0pt)
     Gayubas, A. (2017). Oriente y occidente. Enciclopedia de Humanidades.
 
@@ -394,4 +426,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789502878561
+// build-trigger: 1789503808120
