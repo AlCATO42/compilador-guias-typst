@@ -83,44 +83,6 @@
     #text(weight: "bold", fill: rgb("#92400e"), size: 8.2pt)[💡 ¿Sabías que...?]
     #v(2.0pt)
     Lo que se conoce como Oriente y Occidente corresponde a dos conceptos arbitrarios surgidos en Europa que dividen al mundo en dos grandes áreas culturales. Al Oriente se asocia a Asia, el norte de África y partes de Europa oriental, y abarca una diversidad de culturas, lenguas y religiones como el islamismo, el hinduismo, el budismo y el cristianismo ortodoxo. A Occidente se asocia a Europa, América y gran parte de Oceanía; abarca países cuyas culturas, lenguas y religiones están influenciadas en su mayoría, aunque no únicamente por el cristianismo católico y protestante (Gayubas, 2017).
-
-Revisa el apartado ¿Sabías que...? y la sección 5. Las cruzadas. Subraya en el texto todas las palabras o expresiones que califiquen a un grupo humano o región (por ejemplo: “Oriente”, “Occidente”, “Tierra Santa”, etc.). Luego, elige dos eventos relatados (como las Cruzadas o el comercio entre regiones) y escríbelos desde dos perspectivas distintas: Como lo relataría un habitante de Constantinopla o Jerusalén, o como lo relataría un comerciante o viajero europeo.
-
-- Responde por escrito:
-
-¿De qué manera el lugar donde nacemos o vivimos influye en la forma en que nombramos a los “otros” o juzgamos sus costumbres?
-
-¿Por qué creemos habitualmente que el poder en la historia solo lo ejercían los hombres guerreros o reyes, y qué nos demuestra el caso bizantino e islámico sobre otras formas de liderazgo?
-
-¿Qué saberes o aportes de la ciencia, la filosofía y la vida cotidiana que usamos hoy en día son el resultado de la mezcla entre estas distintas tradiciones culturales?
-
-¿Cuáles fueron las principales diferencias estructurales entre la organización de la Iglesia católica en Occidente y la Iglesia ortodoxa en Oriente?
-
-¿De qué manera los gobernantes y líderes de la Edad Media utilizaron las creencias religiosas para justificar la expansión militar o consolidar su control político?
-
-¿Por qué Jerusalén y sus alrededores eran considerados un territorio estratégico y sagrado durante la Edad Media?
-
-¿Qué consecuencias tuvo la llegada de los ejércitos europeos en las relaciones entre las distintas comunidades religiosas que habitaban la región en la que se desarrollaron las cruzadas?
-
-- Examina las secciones de la guía dedicadas a la expansión del islam, el judaísmo y el cristianismo. Posteriormente, elabora un diagrama de red o esquema que conecte los elementos que las tres culturas compartieron durante los siglos V al XV (conocimientos científicos, medicina, rutas comerciales, figuras religiosas comunes como Abraham o Jesús). También, identifica y anota los momentos de la lectura donde la convivencia o el intercambio entre estas culturas fue pacífico y enriquecedor, en contraste con los momentos de conflicto armado.
-
-- Línea de tiempo: Revisa las secciones sobre la expansión del Islam, el Judaísmo y el Cristianismo; elabora una línea de tiempo paralela colocando los eventos clave de cada religión entre los siglos V y XV (por ejemplo: la Hégira en 622 d. C., la conquista asiria, la caída de Jerusalén o el Edicto de Tesalónica en 380 d. C.). Identifica en la línea de tiempo, qué acontecimientos ocurrieron simultáneamente en distintas regiones del mundo.
-
-- Cuadro de causa-efecto de los procesos históricos: De la lectura 5. Las cruzadas y la transición del cisma de Oriente completa un cuadro de dos columnas relacionando las causas de un evento con sus consecuencias a largo plazo:
-
-Glosario conceptual: Identifica y define con tus propias palabras los siguientes términos clave presentes en la guía: Monoteísmo, hégira, califato, diáspora, sinodalidad y cruzada.
-
-- Análisis del triángulo de poder, religión y guerra: Revisa las secciones 1. Civilización bizantina, 2. El Islam y 5. Las cruzadas. Luego, elabora un esquema de tres círculos en que relaciones entre sí, a partir de los datos de la guía, estos tres conceptos.
-
-- Conexión histórica con el presente: Selecciona un hecho o noticia actual de la prensa internacional que involucre relaciones o tensiones entre países de “Oriente” y “Occidente” (o entre distintas identidades religiosas y territoriales) y compara el hecho actual con los eventos estudiados en la guía y completa un cuadro comparativo con las siguientes preguntas:
-
-¿Qué ideas o prejuicios del pasado histórico siguen presentes en la forma de retratar este conflicto hoy en día?
-
-¿De qué forma las divisiones geopolíticas creadas en la Edad Media continúan influyendo en las fronteras y alianzas del mundo actual?
-
-- Durante las Cruzadas (hace casi 1000 años), personas de diferentes religiones y países lucharon por el control de la ciudad de Jerusalén y las tierras de alrededor. Hoy en día, en esa misma zona (donde están Israel y Palestina), sigue existiendo un conflicto por la tierra, la soberanía y los derechos humanos. Completa el cuadro de coincidencias en cada casilla según lo que leíste en la guía y en la información anterior:
-
-Responde: ¿Qué consecuencias tiene para la vida diaria de una población cuando un ejército o un Estado extranjero controla su tierra, sus recursos y su libertad de movimiento?
   ]
   #v(2.5pt)
 
@@ -161,16 +123,6 @@ El cristianismo ortodoxo es una de las principales ramas del cristianismo, cuya 
 A diferencia de la Iglesia católica de Occidente, organizada bajo la autoridad centralizada y única del Papa en Roma, la Iglesia ortodoxa se estructuró como una comunión de iglesias autónomas dirigidas por sus propios obispos y patriarcas, donde el Patriarca de Constantinopla poseía un liderazgo de honor (primus inter pares o primero entre iguales), pero sin detentar un poder absoluto sobre las demás sedes (Meyendorff, 1989).
 
 El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones originales (Meyendorff, 1989). Otorga una gran relevancia a la liturgia, el misticismo y la veneración de iconos (pinturas sagradas), entendidos como ventanas espirituales hacia lo divino (Kiss, 2018).
-
-#v(3.0pt)
-#align(center)[
-  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_1.png", width: 92%)
-  ]
-]
-#v(2.0pt)
-
-
   ]
   #v(2.5pt)
 
@@ -195,7 +147,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_2.jpg", width: 92%)
+    #image("img_act_1.jpg", width: 92%)
   ]
 ]
 #v(2.0pt)
@@ -313,7 +265,7 @@ Sin embargo, tras la división política del mundo romano y el distanciamiento c
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_3.png", width: 92%)
+    #image("img_act_2.png", width: 92%)
   ]
 ]
 #v(2.0pt)
@@ -398,6 +350,44 @@ Se reconocen oficialmente ocho grandes Cruzadas:
 ¿Qué grupos o personas casi no son mencionados en el texto?
 
 Completa la tabla registrando a los actores presentes en la lectura (emperadores, emperatrices como Teodora, escritoras como Ana Comneno, eunucos, comerciantes, misticismo sufí, entre otros).
+
+- Revisa el apartado ¿Sabías que...? y la sección 5. Las cruzadas. Subraya en el texto todas las palabras o expresiones que califiquen a un grupo humano o región (por ejemplo: “Oriente”, “Occidente”, “Tierra Santa”, etc.). Luego, elige dos eventos relatados (como las Cruzadas o el comercio entre regiones) y escríbelos desde dos perspectivas distintas: Como lo relataría un habitante de Constantinopla o Jerusalén, o como lo relataría un comerciante o viajero europeo.
+
+- Responde por escrito:
+
+¿De qué manera el lugar donde nacemos o vivimos influye en la forma en que nombramos a los “otros” o juzgamos sus costumbres?
+
+¿Por qué creemos habitualmente que el poder en la historia solo lo ejercían los hombres guerreros o reyes, y qué nos demuestra el caso bizantino e islámico sobre otras formas de liderazgo?
+
+¿Qué saberes o aportes de la ciencia, la filosofía y la vida cotidiana que usamos hoy en día son el resultado de la mezcla entre estas distintas tradiciones culturales?
+
+¿Cuáles fueron las principales diferencias estructurales entre la organización de la Iglesia católica en Occidente y la Iglesia ortodoxa en Oriente?
+
+¿De qué manera los gobernantes y líderes de la Edad Media utilizaron las creencias religiosas para justificar la expansión militar o consolidar su control político?
+
+¿Por qué Jerusalén y sus alrededores eran considerados un territorio estratégico y sagrado durante la Edad Media?
+
+¿Qué consecuencias tuvo la llegada de los ejércitos europeos en las relaciones entre las distintas comunidades religiosas que habitaban la región en la que se desarrollaron las cruzadas?
+
+- Examina las secciones de la guía dedicadas a la expansión del islam, el judaísmo y el cristianismo. Posteriormente, elabora un diagrama de red o esquema que conecte los elementos que las tres culturas compartieron durante los siglos V al XV (conocimientos científicos, medicina, rutas comerciales, figuras religiosas comunes como Abraham o Jesús). También, identifica y anota los momentos de la lectura donde la convivencia o el intercambio entre estas culturas fue pacífico y enriquecedor, en contraste con los momentos de conflicto armado.
+
+- Línea de tiempo: Revisa las secciones sobre la expansión del Islam, el Judaísmo y el Cristianismo; elabora una línea de tiempo paralela colocando los eventos clave de cada religión entre los siglos V y XV (por ejemplo: la Hégira en 622 d. C., la conquista asiria, la caída de Jerusalén o el Edicto de Tesalónica en 380 d. C.). Identifica en la línea de tiempo, qué acontecimientos ocurrieron simultáneamente en distintas regiones del mundo.
+
+- Cuadro de causa-efecto de los procesos históricos: De la lectura 5. Las cruzadas y la transición del cisma de Oriente completa un cuadro de dos columnas relacionando las causas de un evento con sus consecuencias a largo plazo:
+
+Glosario conceptual: Identifica y define con tus propias palabras los siguientes términos clave presentes en la guía: Monoteísmo, hégira, califato, diáspora, sinodalidad y cruzada.
+
+- Análisis del triángulo de poder, religión y guerra: Revisa las secciones 1. Civilización bizantina, 2. El Islam y 5. Las cruzadas. Luego, elabora un esquema de tres círculos en que relaciones entre sí, a partir de los datos de la guía, estos tres conceptos.
+
+- Conexión histórica con el presente: Selecciona un hecho o noticia actual de la prensa internacional que involucre relaciones o tensiones entre países de “Oriente” y “Occidente” (o entre distintas identidades religiosas y territoriales) y compara el hecho actual con los eventos estudiados en la guía y completa un cuadro comparativo con las siguientes preguntas:
+
+¿Qué ideas o prejuicios del pasado histórico siguen presentes en la forma de retratar este conflicto hoy en día?
+
+¿De qué forma las divisiones geopolíticas creadas en la Edad Media continúan influyendo en las fronteras y alianzas del mundo actual?
+
+- Durante las Cruzadas (hace casi 1000 años), personas de diferentes religiones y países lucharon por el control de la ciudad de Jerusalén y las tierras de alrededor. Hoy en día, en esa misma zona (donde están Israel y Palestina), sigue existiendo un conflicto por la tierra, la soberanía y los derechos humanos. Completa el cuadro de coincidencias en cada casilla según lo que leíste en la guía y en la información anterior:
+
+Responde: ¿Qué consecuencias tiene para la vida diaria de una población cuando un ejército o un Estado extranjero controla su tierra, sus recursos y su libertad de movimiento?
   ]
   #v(2.5pt)
 
@@ -426,4 +416,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789503808120
+// build-trigger: 1789505003422
