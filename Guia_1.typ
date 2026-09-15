@@ -17,9 +17,9 @@
         #par(leading: 0.22em)[
           #text(size: 10.5pt, weight: "bold", fill: rgb("8A1B04"))[COLEGIO CASTILLA (I. E. D.)] \
           #v(-1.5pt)
-          #text(size: 6.8pt, fill: rgb("#444444"))[undefined] \
+          #text(size: 6.8pt, style: "italic", fill: rgb("#444444"))[PREPARANDO LÍDERES, GENERANDO CAMBIOS.] \
           #v(-2.0pt)
-          #text(size: 6.8pt, weight: "bold", fill: rgb("#444444"))[undefined]
+          #text(size: 6.8pt, weight: "bold", fill: rgb("#444444"))[LO VI, LO SOÑÉ, LO EMPRENDÍ, LO LOGRE.]
         ]
       ]
   
@@ -143,12 +143,15 @@ Existieron dos dinastías. La dinastía omeya, que se extendió por el norte de 
 
 Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Bangladesh en los siglos X y XI) y, tras su división, el Imperio turco otomano se consolidó como el principal Estado musulmán. En el África subsahariana y el sudeste asiático, la expansión ocurrió pacíficamente a través del comercio, la conversión y las prédicas del misticismo sufí (Kiss, 2023).
 
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_1.jpg", width: 100%)
-      ]
-    ]
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_1.jpg", width: 100%)
+  ]
+]
+#v(2.0pt)
+
+
 
     #v(3.5pt)
     #block(
@@ -258,6 +261,14 @@ Sin embargo, tras la división política del mundo romano y el distanciamiento c
     #v(2.0pt)
     Las cruzadas fueron una serie de guerras y expediciones religiosas que ocurrieron durante la Edad Media, entre los años 1096 y 1291. En ellas, miles de caballeros, reyes y campesinos de Europa occidental viajaron hacia Oriente Medio con la meta principal de recuperar el control de Tierra Santa (Jerusalén y sus alrededores), un lugar sagrado para el cristianismo que en ese momento estaba bajo el dominio de gobernantes musulmanes.
 
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_2.png", width: 100%)
+  ]
+]
+#v(2.0pt)
+
 #strong[¿Por qué comenzaron?:]
 
 A finales del siglo XI, la expansión de los turcos selyúcidas hizo que peregrinar a Jerusalén fuera muy peligroso para las y los cristianos. Ante el peligro de sufrir más invasiones, el emperador bizantino le pidió ayuda al papa Urbano II. En 1095, el Papa hizo un llamado masivo en Europa convocando a la población a luchar para librar Tierra Santa, prometiéndoles a cambio la “indulgencia plenaria”, es decir, el perdón de todos sus pecados.
@@ -287,13 +298,6 @@ Se reconocen oficialmente ocho grandes Cruzadas:
 - Aumentó la intolerancia religiosa entre cristianos, musulmanes y judíos, dejando huellas de rivalidad que perduraron durante siglos.
 
 - Difundieron la idea de cruzada religiosa y “guerra santa” que influyó en la concepción de expansiones posteriores, como por ejemplo la conquista hacia Abya Yala (América).
-
-    #v(3.0pt)
-    #align(center)[
-      #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-        #image("img_act_2.png", width: 100%)
-      ]
-    ]
 
     #v(3.5pt)
     #block(
@@ -351,4 +355,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789445843290
+// build-trigger: 1789475697247
