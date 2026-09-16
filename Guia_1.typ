@@ -123,6 +123,8 @@ El cristianismo ortodoxo es una de las principales ramas del cristianismo, cuya 
 A diferencia de la Iglesia católica de Occidente, organizada bajo la autoridad centralizada y única del Papa en Roma, la Iglesia ortodoxa se estructuró como una comunión de iglesias autónomas dirigidas por sus propios obispos y patriarcas, donde el Patriarca de Constantinopla poseía un liderazgo de honor (primus inter pares o primero entre iguales), pero sin detentar un poder absoluto sobre las demás sedes (Meyendorff, 1989).
 
 El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones originales (Meyendorff, 1989). Otorga una gran relevancia a la liturgia, el misticismo y la veneración de iconos (pinturas sagradas), entendidos como ventanas espirituales hacia lo divino (Kiss, 2018).
+
+(Imagen)
   ]
   #v(2.5pt)
 
@@ -432,4 +434,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789505688571
+// build-trigger: 1789517541200
