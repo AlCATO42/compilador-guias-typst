@@ -116,6 +116,14 @@ La gran pelea y separación entre el occidente y el oriente no fue solo un choqu
 
 Aunque la sociedad bizantina estaba dominada por hombres, muchas personas encontraron formas de influir y liderar de maneras muy interesantes. Este es el caso de emperatrices como Teodora o escritoras e historiadoras como Ana Comneno tomaron decisiones políticas, teológicas y culturales de primer nivel que cambiaron el rumbo del imperio (Herrin, 2013). También, para muchas mujeres que no querían casarse ni dedicarse únicamente al hogar, entrar a un monasterio femenino representaba una oportunidad para estudiar, escribir y gestionar sus propios centros de conocimiento (Herrin, 2013). Por su parte, en la corte y la iglesia bizantina, los eunucos ocupaban puestos muy altos de administración y liderazgo religioso, rompiendo con la idea tradicional de que solo los hombres guerreros o sacerdotes podían tener poder (Dagron, 2003).
 
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_1.png", width: 100%)
+  ]
+]
+#v(2.0pt)
+
 El cristianismo ortodoxo es una de las principales ramas del cristianismo, cuya identidad se consolidó en el Imperio bizantino o Imperio romano de Oriente (Cameron, 1998). Su nombre proviene del griego orthos doxa, que se traduce literalmente como “doctrina correcta” o “creencia verdadera” (Meyendorff, 1989).
 
 #strong[¿Qué es el cristianismo ortodoxo?]
@@ -124,7 +132,15 @@ A diferencia de la Iglesia católica de Occidente, organizada bajo la autoridad 
 
 El cristianismo ortodoxo se caracteriza por la fidelidad a las tradiciones originales (Meyendorff, 1989). Otorga una gran relevancia a la liturgia, el misticismo y la veneración de iconos (pinturas sagradas), entendidos como ventanas espirituales hacia lo divino (Kiss, 2018).
 
-(Imagen)
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_2.png", width: 100%)
+  ]
+]
+#v(2.0pt)
+
+
   ]
   #v(2.5pt)
 
@@ -149,7 +165,7 @@ Los herederos mongoles difundieron la fe (llegando a Pakistán, India y Banglade
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_1.jpg", width: 100%)
+    #image("img_act_3.jpg", width: 100%)
   ]
 ]
 #v(2.0pt)
@@ -267,7 +283,7 @@ Sin embargo, tras la división política del mundo romano y el distanciamiento c
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_2.png", width: 100%)
+    #image("img_act_4.png", width: 100%)
   ]
 ]
 #v(2.0pt)
@@ -291,6 +307,14 @@ Se reconocen oficialmente ocho grandes Cruzadas:
 - Cuarta Cruzada (1202-1204): Cambió por completo de rumbo debido a intereses comerciales. En lugar de combatir en Palestina, los cruzados atacaron y saquearon Constantinopla, una de las mayores ciudades cristianas de la época.
 
 - Otras campañas: Hubo intentos posteriores que terminaron en fracasos militares o diplomáticos. Para el año 1291, los mamelucos expulsaron a los últimos cruzados de la región.
+
+#v(3.0pt)
+#align(center)[
+  #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
+    #image("img_act_5.png", width: 100%)
+  ]
+]
+#v(2.0pt)
 
 #strong[Principales consecuencias:]
 
@@ -380,7 +404,7 @@ Completa la tabla registrando a los actores presentes en la lectura (emperadores
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_3.png", width: 100%)
+    #image("img_act_6.png", width: 100%)
   ]
 ]
 #v(2.0pt)
@@ -400,7 +424,7 @@ Completa la tabla registrando a los actores presentes en la lectura (emperadores
 #v(3.0pt)
 #align(center)[
   #box(stroke: 0.35pt + rgb("#d0d7de"), radius: 2.5pt, inset: 2pt)[
-    #image("img_act_4.png", width: 100%)
+    #image("img_act_7.png", width: 100%)
   ]
 ]
 #v(2.0pt)
@@ -434,4 +458,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789517541200
+// build-trigger: 1789519229211
