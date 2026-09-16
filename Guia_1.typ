@@ -40,7 +40,7 @@
   ]
 )
 
-#set text(font: ("Georgia","Roboto", "Liberation Sans", "DejaVu Sans", "Arial"), size: 9.0pt, fill: rgb("#2c3e50"), lang: "es")
+#set text(font: ("Georgia"), size: 9.0pt, fill: rgb("#2c3e50"), lang: "es")
 #set par(justify: true, leading: 0.45em)
 
 #align(center)[#text(size: 13.0pt, weight: "bold", fill: rgb("8A1B04"))[GUÍA: 1. LAS DIVISIONES, GUERRAS Y CRUZADAS RELIGIOSAS]]
@@ -458,4 +458,4 @@ Gayubas, A. (2018). Las cruzadas. Enciclopedia de Humanidades.
 
 ]
 
-// build-trigger: 1789519229211
+// build-trigger: 1789520689842
